@@ -13,7 +13,7 @@ from .energy_models import Building, Weather
 
 class GridEnv(MultiAgentEnv):
     def __init__(self, model_name, data_path, climate_zone, buildings_states_actions_file, hourly_timesteps,
-                 houses_per_node=1, cluster_adjacent_bus_num=6,
+                 houses_per_node=6, cluster_adjacent_bus_num=6,
                  save_memory=True, building_ids=None, nclusters=2, randomseed=2, max_num_houses=None, percent_rl=1):
         self.model_name = model_name
         if not os.path.isdir(f'model_save/{self.model_name}'):
@@ -43,11 +43,6 @@ class GridEnv(MultiAgentEnv):
 
         self.clusters = self._get_bus_clusters()
 
-        # self.clusters = self._set_clusters()
-        # self.rl_agents = [x[0] for x in self.clusters]
-        # self.rl_agents = [j for i in self.rl_agents for j in i]
-        # self.ncluster = 0
-
         self.observation_spaces = {k: v.observation_space for k, v in self.buildings.items()}
         self.action_spaces = {k: v.action_space for k, v in self.buildings.items()}
 
@@ -65,12 +60,21 @@ class GridEnv(MultiAgentEnv):
         self.obs_size = self._get_partial_obs_max_len()
         self.state_size = self.single_agent_obs_size * len(self.agents)
 
-        # self.reset()
-        # rand_act = {k: v.sample() for k, v in aspace.items()}
-        # self.step(rand_act)
-
         self.v_upper = 1.05
         self.v_lower = 0.95
+
+        self.n_agents = len(self.agents)
+        self.episode_limit = 96*5 # 5 days
+
+    def get_env_info(self):
+        env_info = {"state_shape": self.get_state_size(),
+                    "obs_shape": self.get_obs_size(),
+                    "n_actions": self.get_total_actions(),
+                    "action_space": self.buildings[0].action_space,
+                    "agents_name": self.agents,
+                    "n_agents": self.n_agents,
+                    "episode_limit": self.episode_limit}
+        return env_info
 
 
     def reset(self, reset_logs=True):# TODO: to be tested
@@ -183,9 +187,6 @@ class GridEnv(MultiAgentEnv):
         """return the state size
         """
         return self.state_size
-
-    def get_num_of_agents(self):
-        return len(self.agents)
 
     def get_total_actions(self):
         return self.aspace[self.agents[0]].shape[0]

@@ -11,9 +11,6 @@ import wandb
 import torch
 
 from envs.smart_grid.smart_grid_env import GridEnv
-from models.model_registry import Model, Strategy
-from utilities.util import convert, dict2str
-from utilities.trainer import PGTrainer
 
 from tensorboardX import SummaryWriter
 
