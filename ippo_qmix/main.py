@@ -15,36 +15,39 @@ import yaml
 import wandb
 import torch
 
-from ..envs.smart_grid.smart_grid_env import GridEnv
+from envs.smart_grid.smart_grid_env import GridEnv
 from runner import RunnerSimpleSpreadEnv
 from utils.config_utils import ConfigObjectFactory
 
 
 def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument('alg', type=str, nargs="?", default="ippo")
-    argv = parser.parse_args()
-
+    with open("./config.yaml") as f:
+        config_dict = yaml.safe_load(f)
     # env config
-    climate_zone = 1
-    data_path = Path("../envs/data/Climate_Zone_" + str(climate_zone))
+    env_config_dict = config_dict['environment']
+    data_path = Path("../envs/data/Climate_Zone_" + str(env_config_dict['climate_zone']))
     buildings_states_actions = '../envs/data/buildings_state_action_space.json'
     env_config_dict = {
-        "model_name": "192agents",
+        "model_name": str(env_config_dict['houses_per_node']*32)+"agents", # default 6*32 = 192
         "data_path": data_path,
-        "climate_zone": climate_zone,
+        "climate_zone": env_config_dict['climate_zone'],
         "buildings_states_actions_file": buildings_states_actions,
         "hourly_timesteps": 4,
-        "max_num_houses": None
+        "max_num_houses": None,
+        "houses_per_node": env_config_dict['houses_per_node']
     }
     env = GridEnv(**env_config_dict)
 
-    try:
-        runner = RunnerSimpleSpreadEnv(env)
-        runner.run_marl()
-    finally:
-        env.close()
 
+    run = wandb.init(project="grid",
+                     entity="wangyiwen",
+                     config={**env_config_dict},
+                     name=f"ippo" + f"{env.n_agents}")
+
+    runner = RunnerSimpleSpreadEnv(env)
+    runner.run_marl()
+
+    run.finish()
 
 def evaluate():
     train_config = ConfigObjectFactory.get_train_config()
@@ -73,4 +76,3 @@ def evaluate():
 
 if __name__ == "__main__":
     main()
-    evaluate()

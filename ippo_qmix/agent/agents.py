@@ -46,7 +46,7 @@ class MyAgents:
             self.policy = QMix(self.env_info)
 
         elif self.env_config.learn_policy == "centralized_ppo":
-            self.action_space = self.env_info['action_space']
+            self.action_space = self.env_info['n_actions']
             self.policy = CentralizedPPO(self.env_info)
 
         elif self.env_config.learn_policy == "independent_ppo":
@@ -94,11 +94,14 @@ class MyAgents:
                 actions.append(action_with_noise)
         return actions_with_name, actions, log_probs
 
-    def choose_actions(self, obs: dict) -> tuple:
+    def choose_actions(self, obs) -> tuple:
         actions_with_name = {}
         actions = []
         log_probs = []
-        obs = torch.stack([torch.Tensor(value) for value in obs.values()], dim=0)
+
+        # smart grid obs is numpy ndarray
+        # obs = torch.stack([torch.Tensor(value) for value in obs.values()], dim=0)
+        obs = torch.Tensor(obs)
         self.policy.init_hidden(1)
         if isinstance(self.policy, QMix):
             actions_ind = [i for i in range(self.n_actions)]

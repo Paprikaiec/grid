@@ -10,14 +10,13 @@ from pandapower import runpp
 import pandapower.networks as networks
 
 from .energy_models import Building, Weather
+import yaml
 
 class GridEnv(MultiAgentEnv):
     def __init__(self, model_name, data_path, climate_zone, buildings_states_actions_file, hourly_timesteps,
                  houses_per_node=6, cluster_adjacent_bus_num=6,
                  save_memory=True, building_ids=None, nclusters=2, randomseed=2, max_num_houses=None, percent_rl=1):
         self.model_name = model_name
-        if not os.path.isdir(f'model_save/{self.model_name}'):
-            os.mkdir(f'model_save/{self.model_name}')
         self.max_num_houses = max_num_houses
 #        self.nclusters = nclusters
         self.percent_rl = percent_rl
@@ -64,13 +63,15 @@ class GridEnv(MultiAgentEnv):
         self.v_lower = 0.95
 
         self.n_agents = len(self.agents)
-        self.episode_limit = 96*5 # 5 days
+        with open("./config.yaml") as file:
+            config = yaml.safe_load(file)
+        self.episode_limit = config["max_cycle"] # 5 days
 
     def get_env_info(self):
         env_info = {"state_shape": self.get_state_size(),
                     "obs_shape": self.get_obs_size(),
                     "n_actions": self.get_total_actions(),
-                    "action_space": self.buildings[0].action_space,
+                    "action_space": self.buildings[self.agents[0]].action_space,
                     "agents_name": self.agents,
                     "n_agents": self.n_agents,
                     "episode_limit": self.episode_limit}
@@ -196,8 +197,9 @@ class GridEnv(MultiAgentEnv):
 
     def _select_timestamp(self):
         data_len = len(self.weather.data['t_out'])
-        margin = 96
-        return np.random.choice(data_len-margin)
+        time_stamp = np.random.choice(data_len - self.episode_limit)
+        print(time_stamp)
+        return time_stamp
 
     def _get_spaces(self, agents):
         # print([self.buildings[k].action_space for k in agents])
@@ -331,7 +333,7 @@ class GridEnv(MultiAgentEnv):
         self.reward_data += [sum(rewards.values())]
         # self.all_rewards += [rewards.values()]
         # print(agents)
-        return list(rewards.values())
+        return sum(rewards.values())
 
     def _get_done(self):
         # dones = {k: (self.buildings[k].time_step >= self.hourly_timesteps*8760) for k in agents}

@@ -3,8 +3,10 @@ import os
 import pickle
 
 from agent.agents import MyAgents
-from ..envs.smart_grid.smart_grid_env import GridEnv
+from envs.smart_grid.smart_grid_env import GridEnv
 from common.reply_buffer import *
+
+import wandb
 
 
 class RunnerSimpleSpreadEnv(object):
@@ -47,6 +49,7 @@ class RunnerSimpleSpreadEnv(object):
             # grid_wise_control系列算法和常规marl算法不同, 是以格子作为观测空间。
             # ppo 属于on policy算法，训练数据要是同策略的
             total_reward = 0
+            stat = {}
             if "grid_wise_control" in self.env_config.learn_policy and isinstance(self.batch_episode_memory,
                                                                                   GridBatchEpisodeMemory):
                 for i in range(run_episode):
@@ -67,15 +70,17 @@ class RunnerSimpleSpreadEnv(object):
                     self.batch_episode_memory.set_per_episode_len(cycle)
             elif isinstance(self.batch_episode_memory, CommBatchEpisodeMemory):
 
-                for i in range(run_episode):
+
+                for i in range(run_episode): # default: run_episode=3
                     obs, _ = self.env.reset()
                     finish_game = False
                     cycle = 0
                     while not finish_game and cycle < self.env_config.max_cycles:
                         state = self.env.get_state()
                         actions_with_name, actions, log_probs = self.agents.choose_actions(obs)
-                        obs_next, rewards, finish_game, infos = self.env.step(actions_with_name)
-                        state_next = self.env.state()
+                        rewards, finish_game, infos = self.env.step(actions)
+                        obs_next = self.env.get_obs()
+                        state_next = self.env.get_state()
                         if "ppo" in self.env_config.learn_policy:
                             self.batch_episode_memory.store_one_episode(one_obs=obs, one_state=state, action=actions,
                                                                         reward=rewards, log_probs=log_probs)
@@ -86,7 +91,19 @@ class RunnerSimpleSpreadEnv(object):
                         total_reward += rewards
                         obs = obs_next
                         cycle += 1
+
+                        # info: percentage of voltage out of control
+                        #       voltage violtation
+                        #       line loss
+                        #       reactive power (q) loss
+                        for k, v in infos.items():
+                            if k in stat.keys():
+                                stat[k] += v / run_episode
+                            else:
+                                stat[k] = v / run_episode
+
                     self.batch_episode_memory.set_per_episode_len(cycle)
+
             if "ppo" in self.env_config.learn_policy:
                 # 可以用一个policy跑一个batch的数据来收集，由于性能问题假设batch=1，后续来优化
                 batch_data = self.batch_episode_memory.get_batch_data()
@@ -105,7 +122,11 @@ class RunnerSimpleSpreadEnv(object):
             self.result_buffer.append(one_result_buffer)
             if epoch % self.train_config.save_epoch == 0 and epoch != 0:
                 self.save_model_and_result(epoch)
-            print("episode_{} over,avg_reward {}".format(epoch, avg_reward))
+            # wandb log
+            stat['avg_reward'] = avg_reward
+            for k, v in stat.items():
+                wandb.log({k: v / cycle}, step=epoch)
+            print("episode_{} over, avg_reward {}".format(epoch, avg_reward))
 
     def init_saved_model(self):
         if os.path.exists(self.result_path) and (

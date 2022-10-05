@@ -1,7 +1,10 @@
 environment:
   grid_size: 16
   learn_policy: "independent_ppo"
-  max_cycles: 96*5
+  max_cycles: 384 # 96*4
+  houses_per_node: 3
+  climate_zone: 1
+
 train:
   epochs: 365
   show_evaluate_epoch: 100

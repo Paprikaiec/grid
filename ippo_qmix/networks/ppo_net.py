@@ -67,8 +67,8 @@ class IndependentPPOActor(nn.Module, ABC):
     def forward(self, obs, hidden_state):
         fc1_out = torch.relu(self.fc1(obs))
         rnn_out = self.rnn(fc1_out, hidden_state)
-        # 将动作空间映射到[0,1]
-        fc2_out = torch.sigmoid(self.fc2(rnn_out))
+        # 将动作空间映射到[-1,1]
+        fc2_out = torch.tanh(self.fc2(rnn_out))
         return fc2_out, rnn_out
 
 

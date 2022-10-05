@@ -190,13 +190,17 @@ class CommBatchEpisodeMemory(object):
 
     def store_one_episode(self, one_obs: dict, one_state: ndarray, action: list, reward: float,
                           one_obs_next: dict = None, one_state_next: ndarray = None, log_probs: list = None):
-        one_obs = torch.stack([torch.Tensor(value) for value in one_obs.values()], dim=0)
+        # one_obs:array
+        # one_obs_next:array
+        # one_obs = torch.stack([torch.Tensor(value) for value in one_obs.values()], dim=0)
+        one_obs = torch.Tensor(one_obs)
         self.obs.append(one_obs)
         self.state.append(torch.Tensor(one_state))
         self.rewards.append(reward)
         self.unit_actions.append(action)
         if one_obs_next is not None:
-            one_obs_next = torch.stack([torch.Tensor(value) for value in one_obs_next.values()], dim=0)
+            # one_obs_next = torch.stack([torch.Tensor(value) for value in one_obs_next.values()], dim=0)
+            one_obs_next = torch.Tensor(one_obs_next)
             self.obs_next.append(one_obs_next)
         if one_state_next is not None:
             self.state_next.append(torch.Tensor(one_state_next))

@@ -17,12 +17,12 @@ class IndependentPPO(BasePolicy):
         self.train_config = ConfigObjectFactory.get_train_config()
         self.env_config = ConfigObjectFactory.get_environment_config()
         self.n_agents = env_info['n_agents']
-        self.action_dim = env_info['action_dim']
+        self.action_dim = env_info['n_actions']
 
         # 初始化网络
         self.rnn_hidden_dim = 64
-        self.ppo_actor = IndependentPPOActor(env_info['obs_space'], self.action_dim, self.rnn_hidden_dim)
-        self.ppo_critic = IndependentPPOCritic(env_info['obs_space'])
+        self.ppo_actor = IndependentPPOActor(env_info['obs_shape'], self.action_dim, self.rnn_hidden_dim)
+        self.ppo_critic = IndependentPPOCritic(env_info['obs_shape'])
         self.optimizer_actor = torch.optim.Adam(params=self.ppo_actor.parameters(),
                                                 lr=self.train_config.lr_actor)
         self.optimizer_critic = torch.optim.Adam(params=self.ppo_critic.parameters(),
