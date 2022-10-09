@@ -11,11 +11,13 @@ import pandapower.networks as networks
 
 from .energy_models import Building, Weather
 import yaml
+import pickle
 
 class GridEnv(MultiAgentEnv):
     def __init__(self, model_name, data_path, climate_zone, buildings_states_actions_file, hourly_timesteps,
                  houses_per_node=6, cluster_adjacent_bus_num=6,
-                 save_memory=True, building_ids=None, nclusters=2, randomseed=2, max_num_houses=None, percent_rl=1):
+                 save_memory=True, building_ids=None, nclusters=2, randomseed=2, max_num_houses=None, percent_rl=1,
+                 net_name="case33.p", agent_name="agent_96_zone_1.pickle"):
         self.model_name = model_name
         self.max_num_houses = max_num_houses
 #        self.nclusters = nclusters
@@ -33,9 +35,12 @@ class GridEnv(MultiAgentEnv):
         self.save_memory = save_memory
         self.building_ids = building_ids
 
-        self.net = self._make_grid()
+        # self.net = self._make_grid()
+        self.net = pp.from_pickle("../envs/data/"+net_name)
+        # self.buildings = self._add_houses(houses_per_node, 1)  # standard 6 buildings
+        with open("../envs/data/"+agent_name, "rb") as f:
+            self.buildings = pickle.load(f)
 
-        self.buildings = self._add_houses(houses_per_node, 1)  # standard 6 buildings
         self.agents = list(self.buildings.keys())
         self.possible_agents = self.agents[:]
         self.rl_agents = self._set_rl_agents()
@@ -65,7 +70,7 @@ class GridEnv(MultiAgentEnv):
         self.n_agents = len(self.agents)
         with open("./config.yaml") as file:
             config = yaml.safe_load(file)
-        self.episode_limit = config["max_cycle"] # 5 days
+        self.episode_limit = config["environment"]["max_cycles"] # 5 days
 
     def get_env_info(self):
         env_info = {"state_shape": self.get_state_size(),

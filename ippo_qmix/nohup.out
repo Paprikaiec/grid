@@ -952,3 +952,14 @@ episode_362 over, avg_reward -740.7124899755304
 episode_363 over, avg_reward -323.7503276934655
 episode_364 over, avg_reward -743.7832673399322
 episode_365 over, avg_reward -535.3591611302562
+wandb: Currently logged in as: wangyiwen. Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.13.4 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.2
+wandb: Run data is saved locally in /data/wyw/grid/ippo_qmix/wandb/run-20221007_142442-twwhe32g
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run ippo96
+wandb: ⭐️ View project at https://wandb.ai/wangyiwen/grid
+wandb: 🚀 View run at https://wandb.ai/wangyiwen/grid/runs/twwhe32g
+wandb: Network error (ConnectionError), entering retry loop.
+wandb: Network error (ConnectTimeout), entering retry loop.
