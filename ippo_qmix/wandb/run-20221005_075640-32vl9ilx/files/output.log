@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "main.py", line 78, in <module>
+    main()
+  File "main.py", line 47, in main
+    runner = RunnerSimpleSpreadEnv(env)
+  File "/data/wyw/grid/ippo_qmix/runner.py", line 21, in __init__
+    self.agents = MyAgents(self.env_info)
+  File "/data/wyw/grid/ippo_qmix/agent/agents.py", line 54, in __init__
+    self.policy = IndependentPPO(self.env_info)
+  File "/data/wyw/grid/ippo_qmix/policy/independent_ppo.py", line 34, in __init__
+    self.init_path(self.model_path, self.result_path)
+  File "/data/wyw/grid/ippo_qmix/policy/base_policy.py", line 10, in init_path
+    os.mkdir(path)
+FileNotFoundError: [Errno 2] No such file or directory: './models/independent_ppo'

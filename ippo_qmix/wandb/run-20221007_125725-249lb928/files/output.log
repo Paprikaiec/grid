@@ -1,0 +1,76 @@
+
+10118
+12356
+24752
+/data/wyw/grid/ippo_qmix/common/reply_buffer.py:237: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  ../torch/csrc/utils/tensor_new.cpp:201.)
+  actions = torch.Tensor(self.unit_actions)
+/home/see/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([1152])) that is different to the input size (torch.Size([96, 1152])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+episode_0 over, avg_reward -1379.1391277886212
+5792
+15351
+15982
+/home/see/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([1152])) that is different to the input size (torch.Size([96, 1152])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+episode_1 over, avg_reward -1304.9754351770664
+25886
+6894
+5926
+episode_2 over, avg_reward -1230.3079430930618
+31028
+/home/see/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([1152])) that is different to the input size (torch.Size([96, 1152])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+11319
+15278
+/home/see/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([1152])) that is different to the input size (torch.Size([96, 1152])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+episode_3 over, avg_reward -1304.6719956416962
+1690
+19288
+22026
+/home/see/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([1152])) that is different to the input size (torch.Size([96, 1152])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+episode_4 over, avg_reward -1304.957671396537
+10992
+10670
+29266
+Traceback (most recent call last):
+  File "main.py", line 78, in <module>
+    main()
+  File "main.py", line 48, in main
+    runner.run_marl()
+  File "/data/wyw/grid/ippo_qmix/runner.py", line 82, in run_marl
+    obs_next = self.env.get_obs()
+  File "/data/wyw/grid/envs/smart_grid/smart_grid_env.py", line 174, in get_obs
+    all_state_dict = {k: np.array(self.buildings[k].get_state(self.net)) for k in self.agents}
+  File "/data/wyw/grid/envs/smart_grid/smart_grid_env.py", line 174, in <dictcomp>
+    all_state_dict = {k: np.array(self.buildings[k].get_state(self.net)) for k in self.agents}
+  File "/data/wyw/grid/envs/smart_grid/energy_models.py", line 241, in get_state
+    v = float(net.res_bus['vm_pu'][net.load.loc[net.load['name']==self.buildingId].bus])
+  File "/home/see/anaconda3/envs/grid/lib/python3.8/site-packages/pandas/core/indexing.py", line 1500, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "/home/see/anaconda3/envs/grid/lib/python3.8/site-packages/pandas/core/indexing.py", line 1869, in _getitem_axis
+    return self._getbool_axis(key, axis=axis)
+  File "/home/see/anaconda3/envs/grid/lib/python3.8/site-packages/pandas/core/indexing.py", line 1518, in _getbool_axis
+    return self.obj._take(inds, axis=axis)
+  File "/home/see/anaconda3/envs/grid/lib/python3.8/site-packages/pandas/core/generic.py", line 3357, in _take
+    new_data = self._data.take(indices,
+  File "/home/see/anaconda3/envs/grid/lib/python3.8/site-packages/pandas/core/internals/managers.py", line 1349, in take
+    return self.reindex_indexer(new_axis=new_labels, indexer=indexer,
+  File "/home/see/anaconda3/envs/grid/lib/python3.8/site-packages/pandas/core/internals/managers.py", line 1233, in reindex_indexer
+    new_blocks = [blk.take_nd(indexer, axis=axis, fill_tuple=(
+  File "/home/see/anaconda3/envs/grid/lib/python3.8/site-packages/pandas/core/internals/managers.py", line 1233, in <listcomp>
+    new_blocks = [blk.take_nd(indexer, axis=axis, fill_tuple=(
+  File "/home/see/anaconda3/envs/grid/lib/python3.8/site-packages/pandas/core/internals/blocks.py", line 1253, in take_nd
+    return self.make_block_same_class(new_values, new_mgr_locs)
+  File "/home/see/anaconda3/envs/grid/lib/python3.8/site-packages/pandas/core/internals/blocks.py", line 234, in make_block_same_class
+    return make_block(values, placement=placement, ndim=ndim,
+  File "/home/see/anaconda3/envs/grid/lib/python3.8/site-packages/pandas/core/internals/blocks.py", line 3095, in make_block
+    return klass(values, ndim=ndim, placement=placement)
+  File "/home/see/anaconda3/envs/grid/lib/python3.8/site-packages/pandas/core/internals/blocks.py", line 2630, in __init__
+    super(ObjectBlock, self).__init__(values, ndim=ndim,
+  File "/home/see/anaconda3/envs/grid/lib/python3.8/site-packages/pandas/core/internals/blocks.py", line 79, in __init__
+    self.ndim = self._check_ndim(values, ndim)
+  File "/home/see/anaconda3/envs/grid/lib/python3.8/site-packages/pandas/core/internals/blocks.py", line 112, in _check_ndim
+    if self._validate_ndim and values.ndim != ndim:
+KeyboardInterrupt

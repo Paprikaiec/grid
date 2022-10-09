@@ -1,0 +1,912 @@
+/home/see/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/init.py:388: UserWarning: Initializing zero-element tensors is a no-op
+_____________ END OF PANDAPOWER DIAGNOSTIC _____________
+  warnings.warn("Initializing zero-element tensors is a no-op")
+_____________ PANDAPOWER DIAGNOSTIC TOOL _____________
+load 0: bus (nan) not in net.bus.index
+load 1: bus (nan) not in net.bus.index
+load 2: bus (nan) not in net.bus.index
+load 3: bus (nan) not in net.bus.index
+load 4: bus (nan) not in net.bus.index
+load 5: bus (nan) not in net.bus.index
+load 6: bus (nan) not in net.bus.index
+load 7: bus (nan) not in net.bus.index
+load 8: bus (nan) not in net.bus.index
+load 9: bus (nan) not in net.bus.index
+load 10: bus (nan) not in net.bus.index
+load 11: bus (nan) not in net.bus.index
+load 12: bus (nan) not in net.bus.index
+load 13: bus (nan) not in net.bus.index
+load 14: bus (nan) not in net.bus.index
+load 15: bus (nan) not in net.bus.index
+load 16: bus (nan) not in net.bus.index
+load 17: bus (nan) not in net.bus.index
+load 18: bus (nan) not in net.bus.index
+load 19: bus (nan) not in net.bus.index
+load 20: bus (nan) not in net.bus.index
+load 21: bus (nan) not in net.bus.index
+load 22: bus (nan) not in net.bus.index
+load 23: bus (nan) not in net.bus.index
+load 24: bus (nan) not in net.bus.index
+load 25: bus (nan) not in net.bus.index
+load 26: bus (nan) not in net.bus.index
+load 27: bus (nan) not in net.bus.index
+load 28: bus (nan) not in net.bus.index
+load 29: bus (nan) not in net.bus.index
+load 30: bus (nan) not in net.bus.index
+load 31: bus (nan) not in net.bus.index
+load 32: bus (nan) not in net.bus.index
+load 33: bus (nan) not in net.bus.index
+load 34: bus (nan) not in net.bus.index
+load 35: bus (nan) not in net.bus.index
+load 36: bus (nan) not in net.bus.index
+load 37: bus (nan) not in net.bus.index
+load 38: bus (nan) not in net.bus.index
+load 39: bus (nan) not in net.bus.index
+load 40: bus (nan) not in net.bus.index
+load 41: bus (nan) not in net.bus.index
+load 42: bus (nan) not in net.bus.index
+load 43: bus (nan) not in net.bus.index
+load 44: bus (nan) not in net.bus.index
+load 45: bus (nan) not in net.bus.index
+load 46: bus (nan) not in net.bus.index
+load 47: bus (nan) not in net.bus.index
+load 48: bus (nan) not in net.bus.index
+load 49: bus (nan) not in net.bus.index
+load 50: bus (nan) not in net.bus.index
+load 51: bus (nan) not in net.bus.index
+load 52: bus (nan) not in net.bus.index
+load 53: bus (nan) not in net.bus.index
+load 54: bus (nan) not in net.bus.index
+load 55: bus (nan) not in net.bus.index
+load 56: bus (nan) not in net.bus.index
+load 57: bus (nan) not in net.bus.index
+load 58: bus (nan) not in net.bus.index
+load 59: bus (nan) not in net.bus.index
+load 60: bus (nan) not in net.bus.index
+load 61: bus (nan) not in net.bus.index
+load 62: bus (nan) not in net.bus.index
+load 63: bus (nan) not in net.bus.index
+load 64: bus (nan) not in net.bus.index
+load 65: bus (nan) not in net.bus.index
+load 66: bus (nan) not in net.bus.index
+load 67: bus (nan) not in net.bus.index
+load 68: bus (nan) not in net.bus.index
+load 69: bus (nan) not in net.bus.index
+load 70: bus (nan) not in net.bus.index
+load 71: bus (nan) not in net.bus.index
+load 72: bus (nan) not in net.bus.index
+load 73: bus (nan) not in net.bus.index
+load 74: bus (nan) not in net.bus.index
+load 75: bus (nan) not in net.bus.index
+load 76: bus (nan) not in net.bus.index
+load 77: bus (nan) not in net.bus.index
+load 78: bus (nan) not in net.bus.index
+load 79: bus (nan) not in net.bus.index
+load 80: bus (nan) not in net.bus.index
+load 81: bus (nan) not in net.bus.index
+load 82: bus (nan) not in net.bus.index
+load 83: bus (nan) not in net.bus.index
+load 84: bus (nan) not in net.bus.index
+load 85: bus (nan) not in net.bus.index
+load 86: bus (nan) not in net.bus.index
+load 87: bus (nan) not in net.bus.index
+load 88: bus (nan) not in net.bus.index
+load 89: bus (nan) not in net.bus.index
+load 90: bus (nan) not in net.bus.index
+load 91: bus (nan) not in net.bus.index
+load 92: bus (nan) not in net.bus.index
+load 93: bus (nan) not in net.bus.index
+load 94: bus (nan) not in net.bus.index
+load 95: bus (nan) not in net.bus.index
+sgen 0: bus (nan) not in net.bus.index
+sgen 1: bus (nan) not in net.bus.index
+sgen 2: bus (nan) not in net.bus.index
+sgen 3: bus (nan) not in net.bus.index
+sgen 4: bus (nan) not in net.bus.index
+sgen 5: bus (nan) not in net.bus.index
+sgen 6: bus (nan) not in net.bus.index
+sgen 7: bus (nan) not in net.bus.index
+sgen 8: bus (nan) not in net.bus.index
+sgen 9: bus (nan) not in net.bus.index
+sgen 10: bus (nan) not in net.bus.index
+sgen 11: bus (nan) not in net.bus.index
+sgen 12: bus (nan) not in net.bus.index
+sgen 13: bus (nan) not in net.bus.index
+sgen 14: bus (nan) not in net.bus.index
+sgen 15: bus (nan) not in net.bus.index
+sgen 16: bus (nan) not in net.bus.index
+sgen 17: bus (nan) not in net.bus.index
+sgen 18: bus (nan) not in net.bus.index
+sgen 19: bus (nan) not in net.bus.index
+sgen 20: bus (nan) not in net.bus.index
+sgen 21: bus (nan) not in net.bus.index
+sgen 22: bus (nan) not in net.bus.index
+sgen 23: bus (nan) not in net.bus.index
+sgen 24: bus (nan) not in net.bus.index
+sgen 25: bus (nan) not in net.bus.index
+sgen 26: bus (nan) not in net.bus.index
+sgen 27: bus (nan) not in net.bus.index
+sgen 28: bus (nan) not in net.bus.index
+sgen 29: bus (nan) not in net.bus.index
+sgen 30: bus (nan) not in net.bus.index
+sgen 31: bus (nan) not in net.bus.index
+sgen 32: bus (nan) not in net.bus.index
+sgen 33: bus (nan) not in net.bus.index
+sgen 34: bus (nan) not in net.bus.index
+sgen 35: bus (nan) not in net.bus.index
+sgen 36: bus (nan) not in net.bus.index
+sgen 37: bus (nan) not in net.bus.index
+sgen 38: bus (nan) not in net.bus.index
+sgen 39: bus (nan) not in net.bus.index
+sgen 40: bus (nan) not in net.bus.index
+sgen 41: bus (nan) not in net.bus.index
+sgen 42: bus (nan) not in net.bus.index
+sgen 43: bus (nan) not in net.bus.index
+sgen 44: bus (nan) not in net.bus.index
+sgen 45: bus (nan) not in net.bus.index
+sgen 46: bus (nan) not in net.bus.index
+sgen 47: bus (nan) not in net.bus.index
+sgen 48: bus (nan) not in net.bus.index
+sgen 49: bus (nan) not in net.bus.index
+sgen 50: bus (nan) not in net.bus.index
+sgen 51: bus (nan) not in net.bus.index
+sgen 52: bus (nan) not in net.bus.index
+sgen 53: bus (nan) not in net.bus.index
+sgen 54: bus (nan) not in net.bus.index
+sgen 55: bus (nan) not in net.bus.index
+sgen 56: bus (nan) not in net.bus.index
+sgen 57: bus (nan) not in net.bus.index
+sgen 58: bus (nan) not in net.bus.index
+sgen 59: bus (nan) not in net.bus.index
+sgen 60: bus (nan) not in net.bus.index
+sgen 61: bus (nan) not in net.bus.index
+sgen 62: bus (nan) not in net.bus.index
+sgen 63: bus (nan) not in net.bus.index
+sgen 64: bus (nan) not in net.bus.index
+sgen 65: bus (nan) not in net.bus.index
+sgen 66: bus (nan) not in net.bus.index
+sgen 67: bus (nan) not in net.bus.index
+sgen 68: bus (nan) not in net.bus.index
+sgen 69: bus (nan) not in net.bus.index
+sgen 70: bus (nan) not in net.bus.index
+sgen 71: bus (nan) not in net.bus.index
+sgen 72: bus (nan) not in net.bus.index
+sgen 73: bus (nan) not in net.bus.index
+sgen 74: bus (nan) not in net.bus.index
+sgen 75: bus (nan) not in net.bus.index
+sgen 76: bus (nan) not in net.bus.index
+sgen 77: bus (nan) not in net.bus.index
+sgen 78: bus (nan) not in net.bus.index
+sgen 79: bus (nan) not in net.bus.index
+sgen 80: bus (nan) not in net.bus.index
+sgen 81: bus (nan) not in net.bus.index
+sgen 82: bus (nan) not in net.bus.index
+sgen 83: bus (nan) not in net.bus.index
+sgen 84: bus (nan) not in net.bus.index
+sgen 85: bus (nan) not in net.bus.index
+sgen 86: bus (nan) not in net.bus.index
+sgen 87: bus (nan) not in net.bus.index
+sgen 88: bus (nan) not in net.bus.index
+sgen 89: bus (nan) not in net.bus.index
+sgen 90: bus (nan) not in net.bus.index
+sgen 91: bus (nan) not in net.bus.index
+sgen 92: bus (nan) not in net.bus.index
+sgen 93: bus (nan) not in net.bus.index
+sgen 94: bus (nan) not in net.bus.index
+sgen 95: bus (nan) not in net.bus.index
+SUMMARY: 192 missing bus indices found.
+ --------
+Check for disconnected elements failed due to the following error:
+visit_Constant() got an unexpected keyword argument 'side'
+ --------
+ --------
+ --------
+ --------
+Checking for invalid_values...
+load:
+Invalid value found: 'load 0' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 1' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 2' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 3' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 4' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 5' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 6' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 7' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 8' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 9' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 10' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 11' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 12' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 13' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 14' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 15' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 16' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 17' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 18' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 19' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 20' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 21' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 22' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 23' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 24' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 25' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 26' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 27' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 28' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 29' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 30' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 31' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 32' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 33' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 34' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 35' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 36' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 37' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 38' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 39' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 40' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 41' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 42' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 43' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 44' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 45' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 46' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 47' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 48' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 49' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 50' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 51' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 52' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 53' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 54' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 55' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 56' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 57' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 58' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 59' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 60' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 61' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 62' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 63' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 64' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 65' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 66' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 67' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 68' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 69' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 70' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 71' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 72' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 73' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 74' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 75' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 76' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 77' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 78' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 79' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 80' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 81' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 82' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 83' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 84' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 85' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 86' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 87' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 88' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 89' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 90' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 91' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 92' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 93' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 94' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 95' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'load 0' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 1' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 2' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 3' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 4' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 5' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 6' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 7' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 8' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 9' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 10' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 11' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 12' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 13' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 14' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 15' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 16' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 17' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 18' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 19' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 20' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 21' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 22' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 23' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 24' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 25' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 26' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 27' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 28' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 29' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 30' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 31' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 32' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 33' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 34' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 35' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 36' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 37' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 38' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 39' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 40' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 41' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 42' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 43' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 44' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 45' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 46' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 47' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 48' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 49' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 50' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 51' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 52' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 53' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 54' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 55' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 56' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 57' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 58' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 59' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 60' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 61' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 62' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 63' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 64' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 65' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 66' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 67' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 68' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 69' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 70' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 71' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 72' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 73' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 74' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 75' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 76' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 77' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 78' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 79' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 80' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 81' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 82' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 83' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 84' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 85' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 86' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 87' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 88' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 89' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 90' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 91' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 92' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 93' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 94' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 95' with attribute 'q_mvar' = nan (data type: <class 'str'>). Valid input needs to be number.
+Invalid value found: 'load 0' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 1' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 2' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 3' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 4' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 5' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 6' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 7' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 8' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 9' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 10' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 11' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 12' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 13' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 14' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 15' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 16' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 17' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 18' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 19' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 20' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 21' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 22' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 23' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 24' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 25' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 26' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 27' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 28' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 29' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 30' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 31' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 32' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 33' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 34' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 35' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 36' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 37' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 38' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 39' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 40' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 41' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 42' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 43' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 44' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 45' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 46' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 47' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 48' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 49' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 50' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 51' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 52' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 53' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 54' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 55' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 56' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 57' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 58' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 59' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 60' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 61' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 62' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 63' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 64' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 65' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 66' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 67' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 68' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 69' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 70' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 71' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 72' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 73' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 74' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 75' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 76' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 77' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 78' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 79' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 80' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 81' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 82' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 83' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 84' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 85' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 86' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 87' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 88' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 89' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 90' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 91' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 92' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 93' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 94' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 95' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'load 0' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 1' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 2' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 3' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 4' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 5' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 6' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 7' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 8' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 9' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 10' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 11' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 12' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 13' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 14' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 15' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 16' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 17' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 18' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 19' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 20' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 21' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 22' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 23' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 24' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 25' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 26' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 27' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 28' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 29' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 30' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 31' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 32' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 33' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 34' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 35' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 36' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 37' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 38' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 39' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 40' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 41' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 42' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 43' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 44' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 45' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 46' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 47' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 48' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 49' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 50' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 51' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 52' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 53' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 54' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 55' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 56' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 57' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 58' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 59' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 60' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 61' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 62' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 63' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 64' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 65' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 66' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 67' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 68' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 69' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 70' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 71' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 72' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 73' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 74' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 75' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 76' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 77' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 78' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 79' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 80' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 81' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 82' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 83' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 84' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 85' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 86' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 87' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 88' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 89' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 90' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 91' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 92' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 93' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 94' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'load 95' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+sgen:
+Invalid value found: 'sgen 0' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 1' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 2' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 3' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 4' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 5' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 6' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 7' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 8' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 9' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 10' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 11' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 12' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 13' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 14' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 15' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 16' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 17' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 18' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 19' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 20' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 21' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 22' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 23' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 24' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 25' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 26' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 27' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 28' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 29' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 30' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 31' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 32' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 33' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 34' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 35' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 36' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 37' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 38' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 39' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 40' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 41' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 42' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 43' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 44' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 45' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 46' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 47' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 48' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 49' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 50' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 51' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 52' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 53' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 54' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 55' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 56' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 57' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 58' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 59' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 60' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 61' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 62' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 63' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 64' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 65' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 66' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 67' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 68' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 69' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 70' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 71' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 72' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 73' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 74' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 75' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 76' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 77' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 78' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 79' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 80' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 81' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 82' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 83' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 84' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 85' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 86' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 87' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 88' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 89' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 90' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 91' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 92' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 93' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 94' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 95' with attribute 'bus' = nan (data type: <class 'str'>). Valid input needs to be positive_integer.
+Invalid value found: 'sgen 0' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 1' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 2' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 3' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 4' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 5' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 6' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 7' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 8' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 9' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 10' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 11' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 12' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 13' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 14' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 15' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 16' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 17' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 18' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 19' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 20' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 21' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 22' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 23' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 24' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 25' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 26' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 27' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 28' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 29' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 30' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 31' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 32' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 33' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 34' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 35' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 36' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 37' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 38' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 39' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 40' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 41' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 42' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 43' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 44' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 45' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 46' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 47' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 48' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 49' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 50' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 51' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 52' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 53' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 54' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 55' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 56' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 57' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 58' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 59' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 60' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 61' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 62' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 63' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 64' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 65' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 66' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 67' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 68' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 69' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 70' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 71' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 72' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 73' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 74' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 75' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 76' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 77' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 78' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 79' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 80' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 81' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 82' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 83' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 84' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 85' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 86' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 87' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 88' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 89' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 90' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 91' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 92' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 93' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 94' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 95' with attribute 'scaling' = nan (data type: <class 'str'>). Valid input needs to be >=0.
+Invalid value found: 'sgen 0' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 1' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 2' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 3' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 4' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 5' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 6' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 7' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 8' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 9' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 10' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 11' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 12' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 13' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 14' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 15' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 16' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 17' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 18' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 19' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 20' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 21' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 22' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 23' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 24' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 25' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 26' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 27' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 28' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 29' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 30' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 31' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 32' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 33' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 34' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 35' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 36' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 37' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 38' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 39' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 40' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 41' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 42' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 43' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 44' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 45' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 46' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 47' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 48' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 49' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 50' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 51' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 52' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 53' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 54' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 55' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 56' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 57' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 58' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 59' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 60' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 61' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 62' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 63' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 64' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 65' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 66' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 67' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 68' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 69' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 70' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 71' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 72' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 73' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 74' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 75' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 76' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 77' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 78' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 79' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 80' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 81' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 82' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 83' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 84' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 85' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 86' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 87' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 88' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 89' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 90' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 91' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 92' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 93' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 94' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+Invalid value found: 'sgen 95' with attribute 'in_service' = nan (data type: <class 'str'>). Valid input needs to be boolean.
+SUMMARY: 672 invalid values found.
+ --------
+Check for overload failed due to the following error:
+Failed in nopython mode pipeline (step: nopython frontend)
+non-precise type array(pyobject, 1d, A)
+During: typing of argument at /home/see/anaconda3/envs/grid/lib/python3.8/site-packages/pandapower/auxiliary.py (365)
+File "../../../../home/see/anaconda3/envs/grid/lib/python3.8/site-packages/pandapower/auxiliary.py", line 365:
+def _python_set_elements_oos(ti, tis, bis, lis):  # pragma: no cover
+    for i in range(len(ti)):
+    ^
+ --------
+Check for multiple voltage controlling elements per bus failed due to the following error:
+visit_Constant() got an unexpected keyword argument 'side'
+ --------
+Checking switch configuration...
+Power flow still does not converge with all switches closed.
+ --------
+ --------
+ --------
+ --------
+numba_comparison failed due to the following error:
+Failed in nopython mode pipeline (step: nopython frontend)
+non-precise type array(pyobject, 1d, A)
+During: typing of argument at /home/see/anaconda3/envs/grid/lib/python3.8/site-packages/pandapower/auxiliary.py (365)
+File "../../../../home/see/anaconda3/envs/grid/lib/python3.8/site-packages/pandapower/auxiliary.py", line 365:
+def _python_set_elements_oos(ti, tis, bis, lis):  # pragma: no cover
+    for i in range(len(ti)):
+    ^
+ --------
+Check for parallel_switches failed due to the following error:
+visit_Constant() got an unexpected keyword argument 'side'
+ --------
+15693
