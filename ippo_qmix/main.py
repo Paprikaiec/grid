@@ -17,6 +17,7 @@ import torch
 
 from envs.smart_grid.smart_grid_env import GridEnv
 from runner import RunnerSimpleSpreadEnv
+from RBC_runner import RunnerRBC
 from utils.config_utils import ConfigObjectFactory
 
 
@@ -27,16 +28,22 @@ def main():
     env_config_dict = config_dict['environment']
     data_path = Path("../envs/data/Climate_Zone_" + str(env_config_dict['climate_zone']))
     buildings_states_actions = '../envs/data/buildings_state_action_space.json'
-    env_config_dict = {
+
+    n_agents = env_config_dict['houses_per_node'] * 32
+    path = "../envs/data/" + str(n_agents) + "_agents/"
+
+    grid_config_dict = {
         "model_name": str(env_config_dict['houses_per_node']*32)+"agents", # default 6*32 = 192
         "data_path": data_path,
         "climate_zone": env_config_dict['climate_zone'],
         "buildings_states_actions_file": buildings_states_actions,
         "hourly_timesteps": 4,
         "max_num_houses": None,
-        "houses_per_node": env_config_dict['houses_per_node']
+        "houses_per_node": env_config_dict['houses_per_node'],
+        "net_path": path + "case33.p",
+        "agent_path": path + "agent_" + str(n_agents) + "_zone_" + str(env_config_dict['climate_zone']) + ".pickle"
     }
-    env = GridEnv(**env_config_dict)
+    env = GridEnv(**grid_config_dict)
 
 
     run = wandb.init(project="grid",
@@ -44,7 +51,10 @@ def main():
                      config={**env_config_dict},
                      name=f"ippo" + f"{env.n_agents}")
 
-    runner = RunnerSimpleSpreadEnv(env)
+    if env_config_dict["learn_policy"] == "RBC":
+        runner = RunnerRBC(env)
+    else:
+        runner = RunnerSimpleSpreadEnv(env)
     runner.run_marl()
 
     run.finish()

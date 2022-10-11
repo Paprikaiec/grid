@@ -31,7 +31,6 @@ class RBC_Agent(Base_Agent):
     def predict(self):
         hour_day = self.env.time_step / self.env.hourly_timesteps % 24
         tou_storage = self.get_tou_storage(hour_day)
-        daytime = True if hour_day >= self.env.morning and hour_day <= self.env.night else False
 
         actions = []
         if self.env.enabled_actions['cooling_storage']:
@@ -59,7 +58,6 @@ class RBC_Agent_v2(RBC_Agent):
     def predict(self):
         hour_day = self.env.time_step/self.env.hourly_timesteps % 24
         tou_storage = self.get_tou_storage(hour_day)
-        daytime = True if hour_day >= self.env.morning and hour_day <= self.env.night else False
         actions = []
         if self.env.enabled_actions['cooling_storage']:
             actions += [tou_storage]

@@ -1,1 +1,0 @@
-{"percentage_of_v_out_of_control": 0.025726010101010024, "_timestamp": 1665151701.601536, "_runtime": 4256.38551902771, "average_voltage_deviation": 0.013877849019401992, "average_voltage": 1.005409912638488, "total_line_loss": 0.2969085175746977, "q_loss": 0.0040244934483834194, "avg_reward": -3.398327269261815, "_step": 4, "_wandb": {"runtime": 5063}}

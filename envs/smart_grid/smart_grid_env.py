@@ -17,7 +17,7 @@ class GridEnv(MultiAgentEnv):
     def __init__(self, model_name, data_path, climate_zone, buildings_states_actions_file, hourly_timesteps,
                  houses_per_node=6, cluster_adjacent_bus_num=6,
                  save_memory=True, building_ids=None, nclusters=2, randomseed=2, max_num_houses=None, percent_rl=1,
-                 net_name="case33.p", agent_name="agent_96_zone_1.pickle"):
+                 net_path="./", agent_path="./"):
         self.model_name = model_name
         self.max_num_houses = max_num_houses
 #        self.nclusters = nclusters
@@ -36,9 +36,9 @@ class GridEnv(MultiAgentEnv):
         self.building_ids = building_ids
 
         # self.net = self._make_grid()
-        self.net = pp.from_pickle("../envs/data/"+net_name)
+        self.net = pp.from_pickle(net_path)
         # self.buildings = self._add_houses(houses_per_node, 1)  # standard 6 buildings
-        with open("../envs/data/"+agent_name, "rb") as f:
+        with open(agent_path, "rb") as f:
             self.buildings = pickle.load(f)
 
         self.agents = list(self.buildings.keys())

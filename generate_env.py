@@ -60,9 +60,6 @@ pp.create_shunt_as_capacitor(net, 24, 0.6, 0)
 pp.create_shunt_as_capacitor(net, 30, 1.2, 0)
 
 
-
-
-
 ## add houses
 
 with open("./config.yaml") as f:
@@ -79,6 +76,7 @@ buildings_states_actions_file = "./envs/data/buildings_state_action_space.json"
 save_memory = True
 houses_per_node = env_config_dict['houses_per_node']
 
+n_agents = env_config_dict['houses_per_node']*32
 
 n = houses_per_node
 m = n  # + np.random.randint(-2,8)
@@ -126,14 +124,18 @@ for existing_node in list(res_load_nodes):
         buildings[bldg.buildingId] = bldg
         # bldg.assign_neighbors(net)
 
-pp.to_pickle(net, "./envs/data/case33.p")
-file = "./envs/data/"+"agent_"+str(env_config_dict['houses_per_node']*32)+"_zone_"+str(env_config_dict['climate_zone'])+".pickle"
+# mkdir and export net and agents
+if not os.path.exists("./envs/data/" + str(n_agents) + "_agents"):
+    os.mkdir("./envs/data/" + str(n_agents) + "_agents")
+path = "./envs/data/" + str(n_agents) + "_agents/"
+pp.to_pickle(net, path + "case33.p")
+file = path + "agent_" + str(n_agents) + "_zone_" + str(env_config_dict['climate_zone']) + ".pickle"
 with open(file, "wb") as f:
     pickle.dump(buildings, f)
 
 
-from collections import Counter
-
-types = [v.building_type for v in buildings.values()]
-print(Counter(types))
+# from collections import Counter
+#
+# types = [v.building_type for v in buildings.values()]
+# print(Counter(types))
 
