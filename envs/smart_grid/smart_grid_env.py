@@ -83,7 +83,7 @@ class GridEnv(MultiAgentEnv):
         return env_info
 
 
-    def reset(self, reset_logs=True):# TODO: to be tested
+    def reset(self, reset_logs=True):
         # self.system_losses = []
         # self.voltage_dev = []
         # return {k:self.buildings[k].reset_timestep(self.net, reset_logs) for k in agents}
@@ -164,13 +164,13 @@ class GridEnv(MultiAgentEnv):
         self.gen_data += [sum(list(self.net.sgen['p_mw']))]
         return self._get_reward(), self._get_done(), self._get_info()
 
-    def get_state(self): # TODO: to be tested
+    def get_state(self):
         # states = {k: np.array(self.buildings[k].get_state(self.net)) for k in agents}
         # return states
         state = np.concatenate([np.array(self.buildings[k].get_state(self.net)) for k in self.agents])
         return state
 
-    def get_obs(self): # TODO: to be tested
+    def get_obs(self):
         all_state_dict = {k: np.array(self.buildings[k].get_state(self.net)) for k in self.agents}
         pad_obs_list = []
         for agent in self.rl_agents:

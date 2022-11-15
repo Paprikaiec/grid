@@ -1,53 +1,2973 @@
 wandb: Currently logged in as: wangyiwen. Use `wandb login --relogin` to force relogin
-wandb: wandb version 0.13.4 is available!  To upgrade, please run:
+wandb: wandb version 0.13.5 is available!  To upgrade, please run:
 wandb:  $ pip install wandb --upgrade
-wandb: Tracking run with wandb version 0.13.2
-wandb: Run data is saved locally in /root/Project/grid/ippo_qmix/wandb/run-20221010_154938-1r1bsz5i
+wandb: Tracking run with wandb version 0.13.4
+wandb: Run data is saved locally in /root/Project/grid/ippo_qmix/wandb/run-20221108_135336-3ud4li77
 wandb: Run `wandb offline` to turn off syncing.
-wandb: Syncing run ippo192
+wandb: Syncing run RBC_32_maxday_2.0
 wandb: ⭐️ View project at https://wandb.ai/wangyiwen/grid
-wandb: 🚀 View run at https://wandb.ai/wangyiwen/grid/runs/1r1bsz5i
+wandb: 🚀 View run at https://wandb.ai/wangyiwen/grid/runs/3ud4li77
+wandb: Currently logged in as: wangyiwen. Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.13.5 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.4
+wandb: Run data is saved locally in /root/Project/grid/ippo_qmix/wandb/run-20221108_135547-11v0hnqe
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run independent_ppo_32_maxday_2.0
+wandb: ⭐️ View project at https://wandb.ai/wangyiwen/grid
+wandb: 🚀 View run at https://wandb.ai/wangyiwen/grid/runs/11v0hnqe
 /root/Project/grid/ippo_qmix/common/reply_buffer.py:237: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  ../torch/csrc/utils/tensor_new.cpp:201.)
   actions = torch.Tensor(self.unit_actions)
-/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([1152])) that is different to the input size (torch.Size([192, 1152])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
   return F.mse_loss(input, target, reduction=self.reduction)
-/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([1152])) that is different to the input size (torch.Size([192, 1152])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
   return F.mse_loss(input, target, reduction=self.reduction)
-/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([1152])) that is different to the input size (torch.Size([192, 1152])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
   return F.mse_loss(input, target, reduction=self.reduction)
-/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([1152])) that is different to the input size (torch.Size([192, 1152])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
   return F.mse_loss(input, target, reduction=self.reduction)
-/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([1152])) that is different to the input size (torch.Size([192, 1152])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
   return F.mse_loss(input, target, reduction=self.reduction)
-/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([1152])) that is different to the input size (torch.Size([192, 1152])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
   return F.mse_loss(input, target, reduction=self.reduction)
-/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([1152])) that is different to the input size (torch.Size([192, 1152])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
   return F.mse_loss(input, target, reduction=self.reduction)
-/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([1152])) that is different to the input size (torch.Size([192, 1152])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
   return F.mse_loss(input, target, reduction=self.reduction)
-/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([1152])) that is different to the input size (torch.Size([192, 1152])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
   return F.mse_loss(input, target, reduction=self.reduction)
-/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([1152])) that is different to the input size (torch.Size([192, 1152])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
   return F.mse_loss(input, target, reduction=self.reduction)
-/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([1152])) that is different to the input size (torch.Size([192, 1152])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
   return F.mse_loss(input, target, reduction=self.reduction)
-/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([1152])) that is different to the input size (torch.Size([192, 1152])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
   return F.mse_loss(input, target, reduction=self.reduction)
-/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([1152])) that is different to the input size (torch.Size([192, 1152])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
   return F.mse_loss(input, target, reduction=self.reduction)
-/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([1152])) that is different to the input size (torch.Size([192, 1152])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
   return F.mse_loss(input, target, reduction=self.reduction)
-/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([1152])) that is different to the input size (torch.Size([192, 1152])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
   return F.mse_loss(input, target, reduction=self.reduction)
-/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([1152])) that is different to the input size (torch.Size([192, 1152])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
   return F.mse_loss(input, target, reduction=self.reduction)
-/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([1152])) that is different to the input size (torch.Size([192, 1152])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
   return F.mse_loss(input, target, reduction=self.reduction)
-/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([1152])) that is different to the input size (torch.Size([192, 1152])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
   return F.mse_loss(input, target, reduction=self.reduction)
-/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([1152])) that is different to the input size (torch.Size([192, 1152])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
   return F.mse_loss(input, target, reduction=self.reduction)
-/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([1152])) that is different to the input size (torch.Size([192, 1152])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
   return F.mse_loss(input, target, reduction=self.reduction)
-/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([1152])) that is different to the input size (torch.Size([192, 1152])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
   return F.mse_loss(input, target, reduction=self.reduction)
+33916
+episode_0 over, avg_reward -108.04756915117557
+5719
+episode_1 over, avg_reward -108.31711668354544
+30359
+episode_2 over, avg_reward -108.04780423615222
+1173
+episode_3 over, avg_reward -107.75686852742751
+30841
+episode_4 over, avg_reward -108.03922421278546
+15814
+episode_5 over, avg_reward -352.987588273104
+16314
+episode_6 over, avg_reward -354.4031080270771
+33230
+episode_7 over, avg_reward -107.74365166838368
+10194
+episode_8 over, avg_reward -355.91615327723815
+3
+episode_9 over, avg_reward -108.2560573307513
+22326
+episode_10 over, avg_reward -355.5861036929209
+26257
+episode_11 over, avg_reward -276.4514865850232
+31347
+episode_12 over, avg_reward -108.02469727680418
+26469
+episode_13 over, avg_reward -107.90101744687962
+23988
+episode_14 over, avg_reward -354.2259835068496
+21199
+episode_15 over, avg_reward -356.4082647565075
+19882
+episode_16 over, avg_reward -355.3433389054753
+19088
+episode_17 over, avg_reward -356.03306449944296
+20579
+episode_18 over, avg_reward -356.2017662558858
+10887
+episode_19 over, avg_reward -355.0841783679678
+31416
+episode_20 over, avg_reward -107.45487444286024
+22711
+episode_21 over, avg_reward -353.32201498330454
+5512
+episode_22 over, avg_reward -107.36534889550046
+25774
+episode_23 over, avg_reward -353.12344065083124
+25473
+episode_24 over, avg_reward -353.47277897868
+11105
+episode_25 over, avg_reward -357.67326314127797
+14620
+episode_26 over, avg_reward -356.52498649656326
+15795
+episode_27 over, avg_reward -353.7125460911895
+12201
+episode_28 over, avg_reward -356.18171544416055
+31832
+episode_29 over, avg_reward -107.72642083154992
+31420
+episode_30 over, avg_reward -107.93719240263064
+24251
+episode_31 over, avg_reward -354.6931436691201
+24128
+episode_32 over, avg_reward -355.9477195697712
+33411
+episode_33 over, avg_reward -107.71542321319808
+7020
+episode_34 over, avg_reward -107.41492594055603
+32799
+episode_35 over, avg_reward -108.02296637347763
+9517
+episode_36 over, avg_reward -359.89345045407543
+1182
+episode_37 over, avg_reward -108.06628297946597
+10212
+episode_38 over, avg_reward -356.1437581649187
+835
+episode_39 over, avg_reward -108.10692276981274
+24964
+episode_40 over, avg_reward -358.51442609548235
+29136
+episode_41 over, avg_reward -107.9215673452129
+2516
+episode_42 over, avg_reward -107.43319865317363
+19125
+episode_43 over, avg_reward -357.65673767387926
+13972
+episode_44 over, avg_reward -354.4209136358924
+22079
+episode_45 over, avg_reward -356.95802067515103
+10791
+episode_46 over, avg_reward -357.26107911650587
+18966
+episode_47 over, avg_reward -356.5633805237917
+30
+episode_48 over, avg_reward -107.68009709548181
+2037
+episode_49 over, avg_reward -107.60744644912836
+30028
+episode_50 over, avg_reward -108.00855763740995
+28265
+episode_51 over, avg_reward -107.87885651045482
+19497
+episode_52 over, avg_reward -354.7280448306866
+16937
+episode_53 over, avg_reward -355.65612611830466
+8275
+episode_54 over, avg_reward -107.45955857395717
+14382
+episode_55 over, avg_reward -355.2210852649217
+8803
+episode_56 over, avg_reward -354.3785163793296
+7591
+episode_57 over, avg_reward -108.00413345203134
+27539
+episode_58 over, avg_reward -107.77238515748795
+6646
+episode_59 over, avg_reward -107.7215262995411
+3253
+episode_60 over, avg_reward -107.55416804070094
+12148
+episode_61 over, avg_reward -356.5972846695394
+14592
+episode_62 over, avg_reward -353.4842655523204
+15633
+episode_63 over, avg_reward -360.1922451316473
+28144
+episode_64 over, avg_reward -107.97827471425742
+1095
+episode_65 over, avg_reward -107.84367613282782
+28190
+episode_66 over, avg_reward -108.18463249415862
+2710
+episode_67 over, avg_reward -108.17915173120738
+5033
+episode_68 over, avg_reward -107.50342323229393
+22259
+episode_69 over, avg_reward -354.44788014223485
+22574
+episode_70 over, avg_reward -356.0694136808088
+18596
+episode_71 over, avg_reward -357.00829512073744
+14105
+episode_72 over, avg_reward -358.36373882279884
+20866
+episode_73 over, avg_reward -355.2670609723641
+21834
+episode_74 over, avg_reward -355.3691225691339
+16089
+episode_75 over, avg_reward -357.1316117921763
+25671
+episode_76 over, avg_reward -355.95073930489264
+29708
+episode_77 over, avg_reward -107.9772276982167
+27583
+episode_78 over, avg_reward -108.0579900324172
+23879
+episode_79 over, avg_reward -355.22319159229846
+34598
+episode_80 over, avg_reward -107.87901311894353
+10110
+episode_81 over, avg_reward -357.31281133713065
+18707
+episode_82 over, avg_reward -358.2691239544003
+5815
+episode_83 over, avg_reward -107.4101913569356
+4303
+episode_84 over, avg_reward -108.33947753048758
+19096
+episode_85 over, avg_reward -353.42574746747255
+15707
+episode_86 over, avg_reward -356.0985517462651
+936
+episode_87 over, avg_reward -108.1593775982953
+13262
+episode_88 over, avg_reward -353.4877983851998
+596
+episode_89 over, avg_reward -107.87567181757728
+5744
+episode_90 over, avg_reward -107.3466280821304
+21126
+episode_91 over, avg_reward -354.76187249988544
+13022
+episode_92 over, avg_reward -355.47041961136574
+14802
+episode_93 over, avg_reward -352.8117953663333
+18804
+episode_94 over, avg_reward -356.2972626380014
+7185
+episode_95 over, avg_reward -107.72777849064781
+12075
+episode_96 over, avg_reward -353.4745751308864
+15568
+episode_97 over, avg_reward -358.11693083144786
+21899
+episode_98 over, avg_reward -354.8204888062961
+23188
+episode_99 over, avg_reward -356.0760116186175
+29297
+episode_100 over, avg_reward -107.35445134304635
+13214
+episode_101 over, avg_reward -356.14339663308743
+31380
+episode_102 over, avg_reward -107.45425849310223
+31918
+episode_103 over, avg_reward -108.17289995339746
+29243
+episode_104 over, avg_reward -107.36641653810594
+26837
+episode_105 over, avg_reward -107.68679398369872
+20604
+episode_106 over, avg_reward -357.7935041648372
+2228
+episode_107 over, avg_reward -107.55790017947251
+18277
+episode_108 over, avg_reward -354.5050315292452
+18566
+episode_109 over, avg_reward -355.93776265660506
+12888
+episode_110 over, avg_reward -356.10430870655074
+5802
+episode_111 over, avg_reward -107.37494389297106
+7233
+episode_112 over, avg_reward -108.59097454517709
+11209
+episode_113 over, avg_reward -355.5650248264724
+23602
+episode_114 over, avg_reward -354.03783637771227
+1244
+episode_115 over, avg_reward -107.87375320628374
+1998
+episode_116 over, avg_reward -107.98142605013552
+14983
+episode_117 over, avg_reward -356.78541747817843
+2646
+episode_118 over, avg_reward -107.41810243871379
+8543
+episode_119 over, avg_reward -283.1018368752607
+21018
+episode_120 over, avg_reward -354.7291032013789
+25537
+episode_121 over, avg_reward -352.8933541293675
+27727
+episode_122 over, avg_reward -107.7574362337943
+25639
+episode_123 over, avg_reward -358.6072245042847
+21489
+episode_124 over, avg_reward -357.513528181085
+13929
+episode_125 over, avg_reward -357.02138235766085
+20550
+episode_126 over, avg_reward -354.77103176388414
+28559
+episode_127 over, avg_reward -108.08455287123678
+22894
+episode_128 over, avg_reward -357.6953842297665
+13147
+episode_129 over, avg_reward -356.60800826764057
+20829
+episode_130 over, avg_reward -355.57533515453906
+14130
+episode_131 over, avg_reward -355.93263671262946
+34371
+episode_132 over, avg_reward -107.2558863230519
+4253
+episode_133 over, avg_reward -108.48658948125399
+28869
+episode_134 over, avg_reward -108.00377326964716
+33240
+episode_135 over, avg_reward -108.57111738479193
+17662
+episode_136 over, avg_reward -354.7549716977901
+25035
+episode_137 over, avg_reward -352.7637308273209
+5842
+episode_138 over, avg_reward -107.98521185609559
+20120
+episode_139 over, avg_reward -356.13814310429007
+11261
+episode_140 over, avg_reward -355.7591333471764
+4958
+episode_141 over, avg_reward -107.74391067401564
+28833
+episode_142 over, avg_reward -108.23249635600655
+31197
+episode_143 over, avg_reward -107.45007209461389
+22307
+episode_144 over, avg_reward -353.8591777137777
+25528
+episode_145 over, avg_reward -354.76418350487256
+997
+episode_146 over, avg_reward -108.27419856760747
+9764
+episode_147 over, avg_reward -353.72986518256124
+26516
+episode_148 over, avg_reward -107.4995283721168
+12145
+episode_149 over, avg_reward -356.59596156873783
+29288
+episode_150 over, avg_reward -107.30969562047267
+13598
+episode_151 over, avg_reward -356.37834782366065
+24768
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+episode_152 over, avg_reward -354.22614741538064
+28324
+episode_153 over, avg_reward -108.25972560384173
+31829
+episode_154 over, avg_reward -107.67579531562589
+16984
+episode_155 over, avg_reward -355.438052231671
+8671
+episode_156 over, avg_reward -356.966460604376
+4541
+episode_157 over, avg_reward -108.35765776298317
+33055
+episode_158 over, avg_reward -107.08749042512412
+18920
+episode_159 over, avg_reward -354.37459735315144
+5678
+episode_160 over, avg_reward -107.994643216598
+29933
+episode_161 over, avg_reward -108.62385730514274
+3984
+episode_162 over, avg_reward -108.20341187217673
+9196
+episode_163 over, avg_reward -355.85131423512405
+30160
+episode_164 over, avg_reward -108.06322793459734
+15164
+episode_165 over, avg_reward -357.2928175756961
+15898
+episode_166 over, avg_reward -355.1270320535804
+1083
+episode_167 over, avg_reward -107.64796537989673
+3080
+episode_168 over, avg_reward -107.61723707106265
+3982
+episode_169 over, avg_reward -107.47774127846026
+25318
+episode_170 over, avg_reward -355.3569899981804
+8094
+episode_171 over, avg_reward -107.63340784895124
+20166
+episode_172 over, avg_reward -354.1864853985704
+1033
+episode_173 over, avg_reward -107.48831455440447
+772
+episode_174 over, avg_reward -107.94558520001698
+9959
+episode_175 over, avg_reward -357.2631081256271
+32455
+episode_176 over, avg_reward -107.92605070873637
+7334
+episode_177 over, avg_reward -108.02535099226114
+16030
+episode_178 over, avg_reward -358.01587981486017
+1820
+episode_179 over, avg_reward -107.81213180721656
+9487
+episode_180 over, avg_reward -356.5280584904854
+34570
+episode_181 over, avg_reward -107.80924807864747
+26510
+episode_182 over, avg_reward -107.82431111053643
+17478
+episode_183 over, avg_reward -356.9970315632878
+29415
+episode_184 over, avg_reward -107.92383625782642
+12050
+episode_185 over, avg_reward -356.7750964614677
+16844
+episode_186 over, avg_reward -359.09016188622235
+15312
+episode_187 over, avg_reward -356.52785502617076
+33709
+episode_188 over, avg_reward -107.74625757476306
+2358
+episode_189 over, avg_reward -107.78840174104349
+4153
+episode_190 over, avg_reward -107.85316142686528
+22419
+episode_191 over, avg_reward -355.4466682493773
+18327
+episode_192 over, avg_reward -358.9946868029577
+23909
+episode_193 over, avg_reward -353.5061158203307
+11440
+episode_194 over, avg_reward -357.0379885598549
+29650
+episode_195 over, avg_reward -107.94793051816077
+32599
+episode_196 over, avg_reward -107.54518559153695
+12934
+episode_197 over, avg_reward -356.2062611290382
+2000
+episode_198 over, avg_reward -107.53541262372477
+4137
+episode_199 over, avg_reward -108.73404004377971
+14629
+episode_200 over, avg_reward -354.99520836557485
+16179
+episode_201 over, avg_reward -354.638710539719
+15096
+episode_202 over, avg_reward -355.63075624369196
+5720
+episode_203 over, avg_reward -107.8808068413702
+19576
+episode_204 over, avg_reward -355.40602430698226
+24496
+episode_205 over, avg_reward -358.0730407270065
+24923
+episode_206 over, avg_reward -355.56423346282423
+30357
+episode_207 over, avg_reward -108.29452266662008
+6303
+episode_208 over, avg_reward -108.76182145552289
+118
+episode_209 over, avg_reward -108.35737428106447
+13232
+episode_210 over, avg_reward -355.3476970686458
+7666
+episode_211 over, avg_reward -107.3850245745582
+20087
+episode_212 over, avg_reward -356.536889889513
+15113
+episode_213 over, avg_reward -356.496394357155
+6179
+episode_214 over, avg_reward -108.07688736664468
+24951
+episode_215 over, avg_reward -355.22831510101213
+34831
+episode_216 over, avg_reward -107.38337662938969
+14108
+episode_217 over, avg_reward -356.5521459951451
+33096
+episode_218 over, avg_reward -107.4186506717252
+19497
+episode_219 over, avg_reward -354.12409267745227
+14134
+episode_220 over, avg_reward -357.2630624047156
+16596
+episode_221 over, avg_reward -357.95070974064026
+187
+episode_222 over, avg_reward -107.88256401886511
+31211
+episode_223 over, avg_reward -108.0821101850863
+25216
+episode_224 over, avg_reward -354.45893650094
+1720
+episode_225 over, avg_reward -107.1700015521057
+22661
+episode_226 over, avg_reward -353.9195810443022
+34255
+episode_227 over, avg_reward -108.16892220825815
+18145
+episode_228 over, avg_reward -354.0446101423425
+33367
+episode_229 over, avg_reward -108.33449194710218
+31570
+episode_230 over, avg_reward -107.47497748654982
+8145
+episode_231 over, avg_reward -108.07260745061018
+884
+episode_232 over, avg_reward -108.16603511838474
+2098
+episode_233 over, avg_reward -108.19186286097016
+33673
+episode_234 over, avg_reward -108.01514093388909
+5229
+episode_235 over, avg_reward -108.446858651729
+33220
+episode_236 over, avg_reward -107.44743520761645
+15530
+episode_237 over, avg_reward -358.376882563414
+16586
+episode_238 over, avg_reward -356.46990019605414
+17765
+episode_239 over, avg_reward -355.97383107128695
+28594
+episode_240 over, avg_reward -107.85140023967645
+5778
+episode_241 over, avg_reward -107.42061768512755
+8123
+episode_242 over, avg_reward -108.18117155610204
+30716
+episode_243 over, avg_reward -107.75336283929605
+15553
+episode_244 over, avg_reward -354.9195207996236
+32359
+episode_245 over, avg_reward -108.05109774016353
+23247
+episode_246 over, avg_reward -353.0181717501402
+8359
+episode_247 over, avg_reward -107.76664320612673
+24405
+episode_248 over, avg_reward -353.0683367864495
+20485
+episode_249 over, avg_reward -353.5666438615593
+2299
+episode_250 over, avg_reward -108.56415529749302
+16910
+episode_251 over, avg_reward -355.988557068803
+11208
+episode_252 over, avg_reward -355.1154286532848
+7590
+episode_253 over, avg_reward -108.58046731936341
+23688
+episode_254 over, avg_reward -356.9264464110829
+27511
+episode_255 over, avg_reward -107.75728482053103
+3146
+episode_256 over, avg_reward -107.20820101794502
+20799
+episode_257 over, avg_reward -357.45942091728335
+11849
+episode_258 over, avg_reward -357.31623420792573
+3900
+episode_259 over, avg_reward -107.66491684321164
+24447
+episode_260 over, avg_reward -355.4812988946793
+10058
+episode_261 over, avg_reward -357.0356497042488
+5810
+episode_262 over, avg_reward -107.46719456768147
+27051
+episode_263 over, avg_reward -107.6227140143246
+10034
+episode_264 over, avg_reward -356.084302012064
+14444
+episode_265 over, avg_reward -357.4348366219769
+22612
+episode_266 over, avg_reward -354.47220415324716
+32624
+episode_267 over, avg_reward -108.28195179214578
+29042
+episode_268 over, avg_reward -107.74923099015055
+9525
+episode_269 over, avg_reward -354.453429650539
+23999
+episode_270 over, avg_reward -357.733340406811
+25634
+episode_271 over, avg_reward -355.6877996335912
+14666
+episode_272 over, avg_reward -353.9327542866708
+31113
+episode_273 over, avg_reward -108.02616265608401
+26945
+episode_274 over, avg_reward -108.0262179530215
+23284
+episode_275 over, avg_reward -357.9001279169211
+24592
+episode_276 over, avg_reward -354.28612086937017
+23866
+episode_277 over, avg_reward -353.9064803136485
+31882
+episode_278 over, avg_reward -107.89819105120318
+32420
+episode_279 over, avg_reward -107.99830263680161
+18666
+episode_280 over, avg_reward -357.32147225665005
+16151
+episode_281 over, avg_reward -355.1408126748289
+12477
+episode_282 over, avg_reward -354.9561619156585
+22839
+episode_283 over, avg_reward -353.9927940016388
+31538
+episode_284 over, avg_reward -107.6861184175267
+20709
+episode_285 over, avg_reward -355.8770221268941
+18956
+episode_286 over, avg_reward -358.2202104677559
+18687
+episode_287 over, avg_reward -356.9682570872573
+30164
+episode_288 over, avg_reward -107.23779365442076
+16748
+episode_289 over, avg_reward -353.22360673437777
+23016
+episode_290 over, avg_reward -357.0011685477077
+17584
+episode_291 over, avg_reward -356.78415439661455
+30583
+episode_292 over, avg_reward -107.66495766787054
+18930
+episode_293 over, avg_reward -352.35683711862976
+4741
+episode_294 over, avg_reward -107.97513542322022
+23792
+episode_295 over, avg_reward -357.1292406487988
+33526
+episode_296 over, avg_reward -108.01338780327569
+16367
+episode_297 over, avg_reward -356.5112839323373
+26305
+episode_298 over, avg_reward -181.61146557168382
+19811
+episode_299 over, avg_reward -357.4324921393319
+20081
+episode_300 over, avg_reward -357.91705916204296
+26365
+episode_301 over, avg_reward -182.36448607915926
+32029
+episode_302 over, avg_reward -107.57305712325865
+25984
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+wandb: Waiting for W&B process to finish... (success).
+wandb: - 0.001 MB of 0.001 MB uploaded (0.000 MB deduped)wandb: \ 0.027 MB of 0.027 MB uploaded (0.000 MB deduped)wandb: | 0.027 MB of 0.027 MB uploaded (0.000 MB deduped)wandb: 
+wandb: Run history:
+wandb:                average_voltage ▁▆██▁████▁█▁▁▄▁███▁███▁▁█▁█▁▁▁██████▁▁█▁
+wandb:      average_voltage_deviation ▁▆██▁████▁█▁▁▆▁███▁███▁▁█▁█▁▁▁██████▁▁█▁
+wandb:                     avg_reward █▃▁▁█▁▁▁▁█▁██▃█▁▁▁█▁▁▁██▁█▁███▁▁▁▁▁▁██▁█
+wandb: percentage_of_v_out_of_control ▁▅▇▇▁█▇██▁▇▁▁▅▁█▇▇▁██▇▁▁▇▁▇▁▁▁█▇███▇▁▁▇▁
+wandb:                         q_loss ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:                total_line_loss ▁▆██▁████▁█▁▁▅▁███▁███▁▁█▁█▁▁▁██████▁▁█▁
+wandb: 
+wandb: Run summary:
+wandb:                average_voltage 1.01769
+wandb:      average_voltage_deviation 0.01892
+wandb:                     avg_reward -1.83863
+wandb: percentage_of_v_out_of_control 0.04735
+wandb:                         q_loss 0.0
+wandb:                total_line_loss 0.39228
+wandb: 
+wandb: Synced RBC_32_maxday_2.0: https://wandb.ai/wangyiwen/grid/runs/3ud4li77
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221108_135336-3ud4li77/logs
+episode_303 over, avg_reward -357.27618830483567
+13993
+episode_304 over, avg_reward -359.3975271805435
+2438
+episode_305 over, avg_reward -107.51713036732946
+23061
+episode_306 over, avg_reward -355.05392291328064
+1072
+episode_307 over, avg_reward -107.72770249889649
+34138
+episode_308 over, avg_reward -107.76612653839396
+30628
+episode_309 over, avg_reward -107.78008255658551
+32100
+episode_310 over, avg_reward -108.32185961598009
+10278
+episode_311 over, avg_reward -355.95196134119914
+31331
+episode_312 over, avg_reward -107.5932112964359
+22519
+episode_313 over, avg_reward -354.6926450643006
+29124
+episode_314 over, avg_reward -107.86884382858477
+12807
+episode_315 over, avg_reward -357.09066258330614
+29498
+episode_316 over, avg_reward -107.99651910949083
+34832
+episode_317 over, avg_reward -107.27703332928982
+29924
+episode_318 over, avg_reward -107.69183576996602
+17492
+episode_319 over, avg_reward -354.7584598289892
+24545
+episode_320 over, avg_reward -356.61624214979656
+9971
+episode_321 over, avg_reward -355.84112248521524
+29642
+episode_322 over, avg_reward -107.612950350446
+18679
+episode_323 over, avg_reward -357.1905756397744
+26892
+episode_324 over, avg_reward -107.3426282954886
+11417
+episode_325 over, avg_reward -358.14711960834455
+8535
+episode_326 over, avg_reward -274.64921882118824
+26064
+episode_327 over, avg_reward -356.72417613079193
+7366
+episode_328 over, avg_reward -107.7879448284531
+32895
+episode_329 over, avg_reward -107.60764844846813
+10102
+episode_330 over, avg_reward -355.2218896947797
+5029
+episode_331 over, avg_reward -107.81249317796576
+30056
+episode_332 over, avg_reward -107.97764646582709
+19842
+episode_333 over, avg_reward -353.95009977975405
+15802
+episode_334 over, avg_reward -355.8096587945039
+4715
+episode_335 over, avg_reward -107.62643914851168
+34798
+episode_336 over, avg_reward -107.59825918044618
+31136
+episode_337 over, avg_reward -108.26390911976893
+33919
+episode_338 over, avg_reward -107.89780498490674
+6706
+episode_339 over, avg_reward -107.67612441011718
+29621
+episode_340 over, avg_reward -107.64356314531858
+12927
+episode_341 over, avg_reward -355.8947181064168
+7627
+episode_342 over, avg_reward -107.27851418403046
+3374
+episode_343 over, avg_reward -107.92847306011473
+28740
+episode_344 over, avg_reward -107.7134314873878
+22673
+episode_345 over, avg_reward -356.4540749402781
+11072
+episode_346 over, avg_reward -354.62028164662667
+18489
+episode_347 over, avg_reward -354.71963420628776
+13965
+episode_348 over, avg_reward -357.60287483998826
+28333
+episode_349 over, avg_reward -107.73516119542106
+30302
+episode_350 over, avg_reward -108.061277844443
+1206
+episode_351 over, avg_reward -107.69876817283125
+7292
+episode_352 over, avg_reward -108.16727970140292
+1230
+episode_353 over, avg_reward -108.00468626167432
+16999
+episode_354 over, avg_reward -355.0915473808605
+19028
+episode_355 over, avg_reward -357.24696764252576
+6318
+episode_356 over, avg_reward -108.26662269028091
+28766
+episode_357 over, avg_reward -107.67236161142156
+10397
+episode_358 over, avg_reward -355.06931370985274
+2942
+episode_359 over, avg_reward -108.06826821759219
+13856
+episode_360 over, avg_reward -353.01788565940626
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+24217
+10318
+27241
+episode_0 over, avg_reward -234.99919613718396
+29313
+30034
+24957
+episode_1 over, avg_reward -239.24749126463266
+4267
+15172
+26121
+episode_2 over, avg_reward -235.17028884763042
+24122
+21072
+34807
+episode_3 over, avg_reward -233.20885927949328
+32109
+25825
+16567
+episode_4 over, avg_reward -235.63676872741397
+19117
+16539
+21745
+episode_5 over, avg_reward -231.2228093913112
+10755
+27034
+28011
+episode_6 over, avg_reward -241.11261840572308
+22509
+669
+5281
+episode_7 over, avg_reward -240.4465425113203
+11698
+10559
+24793
+episode_8 over, avg_reward -229.10608656624876
+34727
+21522
+22406
+episode_9 over, avg_reward -236.1495896575711
+15651
+654
+9180
+episode_10 over, avg_reward -234.8692824446455
+21806
+21227
+19127
+episode_11 over, avg_reward -230.61156254629574
+13208
+16327
+18500
+episode_12 over, avg_reward -231.092615354802
+27129
+23224
+10171
+episode_13 over, avg_reward -235.2910234468935
+30223
+10509
+6960
+episode_14 over, avg_reward -240.06790486447468
+21771
+6706
+6485
+episode_15 over, avg_reward -239.05648435401937
+28380
+18782
+90
+episode_16 over, avg_reward -240.33267591368653
+2247
+31746
+14081
+episode_17 over, avg_reward -240.10094228929793
+20947
+34340
+32275
+episode_18 over, avg_reward -241.5237324110735
+17760
+8019
+32631
+episode_19 over, avg_reward -240.86778749037435
+21327
+33598
+17541
+episode_20 over, avg_reward -235.8742109899206
+1260
+2551
+31564
+episode_21 over, avg_reward -245.52542308397383
+11511
+5072
+3849
+episode_22 over, avg_reward -240.1593325643129
+29355
+16648
+29258
+episode_23 over, avg_reward -239.84875025983777
+2377
+9177
+34486
+episode_24 over, avg_reward -239.94181380157366
+13274
+18846
+6090
+episode_25 over, avg_reward -235.0242669746635
+18824
+17735
+21110
+episode_26 over, avg_reward -229.14938175552155
+7825
+4499
+5222
+episode_27 over, avg_reward -243.8747811589188
+9035
+26327
+12192
+episode_28 over, avg_reward -216.37237269069487
+19193
+13795
+6261
+episode_29 over, avg_reward -233.9102105844256
+12609
+14366
+21572
+episode_30 over, avg_reward -230.52762871949395
+30677
+18076
+26862
+episode_31 over, avg_reward -239.51792594358588
+31009
+12924
+30621
+episode_32 over, avg_reward -240.37541411262325
+6437
+26200
+34275
+episode_33 over, avg_reward -239.82850665073684
+32159
+13623
+24855
+episode_34 over, avg_reward -236.27735885141476
+25351
+654
+23053
+episode_35 over, avg_reward -233.5459279782747
+10507
+17283
+2572
+episode_36 over, avg_reward -232.6511108426636
+9795
+14104
+32125
+episode_37 over, avg_reward -233.76019808078385
+8988
+32746
+24041
+episode_38 over, avg_reward -233.19066988360746
+12192
+16261
+17558
+episode_39 over, avg_reward -229.816354263132
+492
+29740
+34555
+episode_40 over, avg_reward -242.18284208258854
+18891
+8372
+15500
+episode_41 over, avg_reward -233.51724335761912
+33239
+25887
+6324
+episode_42 over, avg_reward -237.01977309830252
+16091
+33078
+27436
+episode_43 over, avg_reward -238.22245740672255
+9762
+18027
+10084
+episode_44 over, avg_reward -228.98859198619152
+22126
+6397
+33071
+episode_45 over, avg_reward -237.07909214244947
+17105
+620
+5173
+episode_46 over, avg_reward -236.10187839240425
+22756
+6066
+30422
+episode_47 over, avg_reward -237.00140825348197
+28792
+23973
+21415
+episode_48 over, avg_reward -233.80447007836585
+9590
+24275
+25084
+episode_49 over, avg_reward -228.40162028798667
+18296
+5148
+16979
+episode_50 over, avg_reward -231.82272120591844
+17594
+5060
+25178
+episode_51 over, avg_reward -231.91719135679887
+16556
+3710
+20970
+episode_52 over, avg_reward -232.83252060193067
+15587
+25542
+28878
+episode_53 over, avg_reward -233.50608778530136
+27253
+23644
+27779
+episode_54 over, avg_reward -237.00257021861682
+31003
+9615
+20306
+episode_55 over, avg_reward -232.6965252369861
+2683
+15257
+2936
+episode_56 over, avg_reward -236.97387124250895
+32700
+28367
+1977
+episode_57 over, avg_reward -239.74477961233615
+609
+8502
+14693
+episode_58 over, avg_reward -246.73878580153237
+13247
+28108
+30369
+episode_59 over, avg_reward -237.4450444310704
+18473
+30334
+9057
+episode_60 over, avg_reward -232.99586219704406
+30161
+5370
+34029
+episode_61 over, avg_reward -240.30501901726464
+13263
+22839
+6722
+episode_62 over, avg_reward -232.92200594133408
+20870
+12360
+6801
+episode_63 over, avg_reward -232.49434910460067
+664
+7398
+8886
+episode_64 over, avg_reward -235.6332436168151
+13617
+9731
+7476
+episode_65 over, avg_reward -230.89943719375916
+4283
+25100
+11780
+episode_66 over, avg_reward -231.62596602118757
+14473
+29359
+12029
+episode_67 over, avg_reward -232.4301488277879
+8265
+31725
+27349
+episode_68 over, avg_reward -241.10719041141112
+5783
+28881
+28443
+episode_69 over, avg_reward -237.9444799724187
+15132
+34188
+8626
+episode_70 over, avg_reward -229.15445637548694
+2070
+27118
+16097
+episode_71 over, avg_reward -234.48948890279794
+8119
+13474
+4435
+episode_72 over, avg_reward -233.98987689477588
+27140
+26341
+22518
+episode_73 over, avg_reward -225.62452918173722
+29214
+11879
+16297
+episode_74 over, avg_reward -232.19052538229153
+21329
+24043
+21161
+episode_75 over, avg_reward -228.35447275237922
+19691
+16115
+9035
+episode_76 over, avg_reward -229.50500468248256
+11264
+24082
+27844
+episode_77 over, avg_reward -231.38393226999082
+17004
+29418
+32145
+episode_78 over, avg_reward -234.8119148697692
+31393
+13422
+21472
+episode_79 over, avg_reward -231.1775284380058
+22486
+4043
+6641
+episode_80 over, avg_reward -234.39013131203987
+8619
+29147
+17991
+episode_81 over, avg_reward -222.80464418091904
+6919
+21286
+16066
+episode_82 over, avg_reward -232.03597360498068
+9620
+23872
+5279
+episode_83 over, avg_reward -230.90711912102324
+5388
+4941
+25408
+episode_84 over, avg_reward -232.2843477213162
+2503
+13680
+26863
+episode_85 over, avg_reward -232.89949395793963
+11172
+15283
+11302
+episode_86 over, avg_reward -228.68498412724657
+8488
+15783
+34196
+episode_87 over, avg_reward -240.39851827232349
+30377
+6325
+33716
+episode_88 over, avg_reward -234.13015252453863
+14579
+1505
+15360
+episode_89 over, avg_reward -231.3548086325699
+11548
+25774
+32910
+episode_90 over, avg_reward -230.9353000961668
+12786
+29116
+9657
+episode_91 over, avg_reward -229.87756426796898
+5128
+756
+21285
+episode_92 over, avg_reward -231.87057899484913
+9084
+28401
+25828
+episode_93 over, avg_reward -229.4209477907134
+20798
+4777
+1050
+episode_94 over, avg_reward -231.62464149542748
+23373
+32672
+31900
+episode_95 over, avg_reward -231.4736114926612
+4675
+13325
+12736
+episode_96 over, avg_reward -229.69977813693757
+22718
+24677
+5983
+episode_97 over, avg_reward -229.10325783917244
+10055
+31716
+20270
+episode_98 over, avg_reward -230.35085631497338
+9751
+28781
+24864
+episode_99 over, avg_reward -229.63861737573382
+20644
+6735
+8852
+episode_100 over, avg_reward -229.61073935661412
+34102
+4449
+34792
+episode_101 over, avg_reward -233.2950074158408
+25317
+10906
+26377
+episode_102 over, avg_reward -238.58243932336515
+9480
+9005
+21119
+episode_103 over, avg_reward -229.04790897485907
+20869
+29606
+7298
+episode_104 over, avg_reward -230.7610106624284
+23976
+30536
+31300
+episode_105 over, avg_reward -231.1738966841692
+3657
+14928
+7763
+episode_106 over, avg_reward -231.14560206344117
+11900
+31923
+14692
+episode_107 over, avg_reward -229.27026533556534
+11876
+6891
+16565
+episode_108 over, avg_reward -228.9259866958851
+30053
+18072
+7750
+episode_109 over, avg_reward -230.09852571509586
+5919
+1119
+16009
+episode_110 over, avg_reward -229.9911018239869
+14997
+4198
+22290
+episode_111 over, avg_reward -228.17462283766886
+27650
+8217
+17375
+episode_112 over, avg_reward -227.7133089367846
+9182
+18286
+4454
+episode_113 over, avg_reward -227.74986084306556
+6368
+20494
+27479
+episode_114 over, avg_reward -229.3376403606828
+217
+105
+22070
+episode_115 over, avg_reward -227.25385123134564
+14005
+24026
+33451
+episode_116 over, avg_reward -228.38067245877323
+31739
+20492
+31957
+episode_117 over, avg_reward -228.40982678956163
+7804
+3465
+13196
+episode_118 over, avg_reward -227.27890055809084
+34190
+33692
+25711
+episode_119 over, avg_reward -227.14983058645592
+13670
+17959
+27532
+episode_120 over, avg_reward -227.01531228547844
+26968
+25869
+25913
+episode_121 over, avg_reward -226.42709373989587
+7750
+1034
+9327
+episode_122 over, avg_reward -227.15929334528832
+21308
+24484
+10193
+episode_123 over, avg_reward -227.1836285497295
+20725
+15377
+3897
+episode_124 over, avg_reward -228.01745304634744
+4621
+16801
+12969
+episode_125 over, avg_reward -227.9196000811688
+20302
+23526
+10585
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+wandb: Network error (ReadTimeout), entering retry loop.
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+episode_126 over, avg_reward -227.5061074598486
+5904
+24340
+12847
+episode_127 over, avg_reward -226.74907424565865
+15441
+4149
+25085
+episode_128 over, avg_reward -226.05070459941223
+16787
+16021
+13984
+episode_129 over, avg_reward -227.30494031774643
+16312
+25448
+22170
+episode_130 over, avg_reward -229.0362652478227
+25276
+12858
+13619
+episode_131 over, avg_reward -228.23628767637368
+26268
+18915
+4582
+episode_132 over, avg_reward -214.45129483237125
+29268
+5927
+26317
+episode_133 over, avg_reward -198.32234327838304
+20901
+7669
+22819
+episode_134 over, avg_reward -225.23129143969837
+12132
+5265
+21399
+episode_135 over, avg_reward -225.5816355751081
+3035
+34485
+24216
+episode_136 over, avg_reward -223.70631755423787
+33271
+1534
+12270
+episode_137 over, avg_reward -220.8491066093293
+558
+30606
+16475
+episode_138 over, avg_reward -222.68430166427478
+15913
+8341
+28672
+episode_139 over, avg_reward -221.40570597147644
+27413
+14086
+1969
+episode_140 over, avg_reward -219.85854490532893
+4679
+31128
+18694
+episode_141 over, avg_reward -221.24548957126242
+25015
+17072
+3333
+episode_142 over, avg_reward -222.68054484012532
+4350
+34834
+12346
+episode_143 over, avg_reward -219.83771636434213
+16749
+22063
+17674
+episode_144 over, avg_reward -226.74914507403602
+13634
+7359
+31218
+episode_145 over, avg_reward -218.22946039595342
+34293
+23854
+10907
+episode_146 over, avg_reward -222.74801498113698
+23422
+32839
+21242
+episode_147 over, avg_reward -222.6621686883308
+30877
+26770
+19450
+episode_148 over, avg_reward -216.16253978986876
+3364
+17152
+3880
+episode_149 over, avg_reward -216.29289496658748
+5203
+605
+2609
+episode_150 over, avg_reward -211.560361915259
+21563
+33848
+11314
+episode_151 over, avg_reward -221.3979322202213
+11578
+15104
+31177
+episode_152 over, avg_reward -221.61573612094512
+13163
+28045
+11011
+episode_153 over, avg_reward -220.04748195870113
+33985
+24604
+20781
+episode_154 over, avg_reward -219.94725503089708
+2333
+1510
+21389
+episode_155 over, avg_reward -214.33581043497827
+4913
+2889
+3346
+episode_156 over, avg_reward -205.6083580797126
+17556
+3542
+19071
+episode_157 over, avg_reward -219.5357251046698
+20914
+25699
+18472
+episode_158 over, avg_reward -228.98190662265165
+14240
+16477
+16864
+episode_159 over, avg_reward -229.23809812423076
+25566
+26811
+25460
+episode_160 over, avg_reward -220.77256602186958
+31991
+19040
+5440
+episode_161 over, avg_reward -209.564969571475
+3986
+23689
+26659
+episode_162 over, avg_reward -210.3835338867781
+3597
+12323
+16733
+episode_163 over, avg_reward -218.11414641458498
+7909
+20709
+16930
+episode_164 over, avg_reward -218.32413791624785
+7491
+29979
+17767
+episode_165 over, avg_reward -207.23657597400947
+720
+33367
+4792
+episode_166 over, avg_reward -197.52614434963263
+3639
+24519
+18718
+episode_167 over, avg_reward -216.7292652573966
+18202
+31338
+7025
+episode_168 over, avg_reward -206.72160482282004
+16866
+29690
+20644
+episode_169 over, avg_reward -219.83556510938993
+5261
+12006
+6596
+episode_170 over, avg_reward -205.55711401161955
+14589
+14507
+3798
+episode_171 over, avg_reward -217.58698335387047
+6150
+26750
+6020
+episode_172 over, avg_reward -193.58752499451649
+23027
+14000
+28642
+episode_173 over, avg_reward -217.64737010026752
+29335
+17782
+23436
+episode_174 over, avg_reward -216.36715082777275
+30328
+24430
+12859
+episode_175 over, avg_reward -217.20473994343988
+1712
+1029
+10684
+episode_176 over, avg_reward -204.96495470102562
+12428
+29687
+19892
+episode_177 over, avg_reward -217.88940639766085
+305
+29739
+26697
+episode_178 over, avg_reward -191.3189463730331
+22575
+34426
+9950
+episode_179 over, avg_reward -217.36745353070316
+8264
+18064
+26885
+episode_180 over, avg_reward -202.38024957566162
+30759
+19894
+10311
+episode_181 over, avg_reward -216.51066970472553
+31199
+28681
+16944
+episode_182 over, avg_reward -202.20518106084293
+31318
+3406
+29561
+episode_183 over, avg_reward -186.56746831361787
+32443
+28433
+27185
+episode_184 over, avg_reward -185.45521543078846
+7214
+3571
+20009
+episode_185 over, avg_reward -200.5352818547445
+29546
+18509
+13916
+episode_186 over, avg_reward -215.32009522580324
+34567
+15437
+23995
+episode_187 over, avg_reward -216.28492403567915
+29730
+25255
+23966
+episode_188 over, avg_reward -216.39213432021242
+13385
+2394
+28753
+episode_189 over, avg_reward -200.21308606012235
+19472
+2349
+20886
+episode_190 over, avg_reward -215.90750054154782
+17452
+24964
+14624
+episode_191 over, avg_reward -232.2132867608769
+658
+34838
+13849
+episode_192 over, avg_reward -199.98369989635214
+28420
+31926
+28125
+episode_193 over, avg_reward -182.158762295021
+8219
+23975
+2413
+episode_194 over, avg_reward -198.63613924194524
+27418
+6763
+4126
+episode_195 over, avg_reward -182.49508927670044
+682
+21349
+7390
+episode_196 over, avg_reward -199.56518817391876
+21661
+5081
+186
+episode_197 over, avg_reward -199.1179624445623
+15064
+1681
+8592
+episode_198 over, avg_reward -201.95547587983674
+29798
+3702
+15754
+episode_199 over, avg_reward -198.6096883238594
+15278
+14102
+24113
+episode_200 over, avg_reward -232.48294105689249
+14380
+32027
+31618
+episode_201 over, avg_reward -199.14871575035068
+28222
+30045
+21737
+episode_202 over, avg_reward -198.94148151213483
+23931
+20710
+24700
+episode_203 over, avg_reward -232.07856988216156
+6106
+26747
+16208
+episode_204 over, avg_reward -198.26817950578592
+33783
+12714
+31990
+episode_205 over, avg_reward -198.82847431939715
+34676
+32633
+28734
+episode_206 over, avg_reward -181.49934714910884
+4937
+17249
+29125
+episode_207 over, avg_reward -198.53155174627804
+29502
+27696
+1313
+episode_208 over, avg_reward -181.60474810380757
+1833
+21213
+32317
+episode_209 over, avg_reward -197.82332557395821
+29044
+5669
+28673
+episode_210 over, avg_reward -182.07296814974845
+6140
+21418
+8349
+episode_211 over, avg_reward -198.0639933879165
+27681
+28427
+3849
+episode_212 over, avg_reward -179.95205866182448
+7984
+29677
+30833
+episode_213 over, avg_reward -179.31124057987347
+10290
+10545
+22057
+episode_214 over, avg_reward -232.66248585441485
+20734
+31419
+27176
+episode_215 over, avg_reward -198.3781498717934
+33568
+20677
+30119
+episode_216 over, avg_reward -198.7055674260879
+14709
+31269
+27923
+episode_217 over, avg_reward -198.23352319607886
+12122
+19857
+32738
+episode_218 over, avg_reward -214.7218275548619
+8814
+34631
+11906
+episode_219 over, avg_reward -215.8241709605425
+19781
+18134
+10984
+episode_220 over, avg_reward -233.12985372125613
+27909
+22606
+32304
+episode_221 over, avg_reward -197.02167076289143
+28877
+29319
+26365
+episode_222 over, avg_reward -195.68364699686995
+20102
+8807
+31761
+episode_223 over, avg_reward -215.07447939350595
+26489
+28729
+1118
+episode_224 over, avg_reward -178.37029532771635
+33308
+19541
+11877
+episode_225 over, avg_reward -214.5412828686907
+22799
+23701
+14440
+episode_226 over, avg_reward -233.26868601277306
+10561
+24618
+9040
+episode_227 over, avg_reward -234.76680460363085
+4124
+10852
+16548
+episode_228 over, avg_reward -215.44434199711338
+9923
+21198
+23922
+episode_229 over, avg_reward -233.49086772942
+32904
+26560
+21751
+episode_230 over, avg_reward -196.33032910568514
+19100
+21307
+18088
+episode_231 over, avg_reward -234.30679033961192
+13235
+16321
+7867
+episode_232 over, avg_reward -214.25367112315826
+9784
+6757
+4669
+episode_233 over, avg_reward -195.45852678136836
+31744
+26102
+33957
+episode_234 over, avg_reward -196.2267633410453
+14607
+26804
+33677
+episode_235 over, avg_reward -193.91577915234245
+10635
+29906
+7662
+episode_236 over, avg_reward -195.75109814259108
+8252
+13183
+1590
+episode_237 over, avg_reward -194.99298846733737
+18359
+22091
+881
+episode_238 over, avg_reward -214.72734571582023
+11689
+13359
+27231
+episode_239 over, avg_reward -214.54255272837307
+33256
+20829
+5142
+episode_240 over, avg_reward -193.5360998087907
+18875
+18567
+32064
+episode_241 over, avg_reward -215.57863604893134
+1214
+4061
+15511
+episode_242 over, avg_reward -195.48230425980228
+27551
+15867
+7542
+episode_243 over, avg_reward -193.6136385547304
+26406
+2057
+23721
+episode_244 over, avg_reward -193.93601508047777
+13358
+5567
+3177
+episode_245 over, avg_reward -193.8379917546225
+24679
+27523
+516
+episode_246 over, avg_reward -192.97358571718033
+14681
+17777
+10963
+episode_247 over, avg_reward -235.2851651702009
+21745
+12741
+29449
+episode_248 over, avg_reward -215.8304898561344
+2579
+8855
+23673
+episode_249 over, avg_reward -216.03473468831191
+20173
+31641
+21058
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+/root/anaconda3/envs/grid/lib/python3.8/site-packages/torch/nn/modules/loss.py:520: UserWarning: Using a target size (torch.Size([576])) that is different to the input size (torch.Size([32, 576])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+wandb: Waiting for W&B process to finish... (success).
+wandb: 
+wandb: Run history:
+wandb:                average_voltage ▅▇▃▁▇▃▅▅▇▅▅▇▅▃▅▃▅▃▆▆▂██▄▆█▆█▆▄▆▄█▆▄▄▄█▂▆
+wandb:      average_voltage_deviation ▇▇▆▅▇▆▇▇▇▇▆▇▆▅▆▅▆▅▆▆▂▇▇▄▆█▆█▆▄▆▄█▆▄▄▄█▁▆
+wandb:                     avg_reward ▂▂▁▁▂▂▂▂▂▂▂▂▂▂▂▃▃▄▃▃▆▂▂▅▃▂▄▂▄▅▃▅▁▃▅▆▅▁█▃
+wandb: percentage_of_v_out_of_control ▆▄▇█▅▇▅▅▄▅▅▄▅▅▅▅▄▄▄▄▁▄▄▂▃▄▃▄▃▂▃▂▄▃▂▂▂▄▁▃
+wandb:                         q_loss ███████████▇▇▇▇▇▆▆▅▅▄▄▄▄▄▃▃▃▂▂▂▂▂▂▂▂▁▁▁▁
+wandb:                total_line_loss ▆█▄▁█▄▆▆█▆▆█▆▃▆▃▆▃▆▆▁██▃▆█▆█▆▃▆▃█▆▃▃▃█▁▆
+wandb: 
+wandb: Run summary:
+wandb:                average_voltage 1.00047
+wandb:      average_voltage_deviation 0.0128
+wandb:                     avg_reward -0.98394
+wandb: percentage_of_v_out_of_control 0.01289
+wandb:                         q_loss 0.00882
+wandb:                total_line_loss 0.22714
+wandb: 
+wandb: Synced independent_ppo_32_maxday_2.0: https://wandb.ai/wangyiwen/grid/runs/11v0hnqe
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221108_135547-11v0hnqe/logs
+episode_250 over, avg_reward -215.90315738617468
+24021
+6449
+25852
+episode_251 over, avg_reward -216.26857363079637
+32057
+3943
+6629
+episode_252 over, avg_reward -171.61293711737926
+22002
+30218
+6639
+episode_253 over, avg_reward -192.9769974107671
+24176
+32554
+25233
+episode_254 over, avg_reward -214.3943992409331
+13740
+23538
+29291
+episode_255 over, avg_reward -213.88361967409506
+13584
+19758
+2784
+episode_256 over, avg_reward -215.18494121817216
+7034
+1665
+14377
+episode_257 over, avg_reward -192.82283844374902
+28080
+27614
+2285
+episode_258 over, avg_reward -171.14529544483705
+29167
+19991
+10036
+episode_259 over, avg_reward -215.12065118566568
+4851
+10172
+21922
+episode_260 over, avg_reward -213.09950972005814
+7027
+30978
+22880
+episode_261 over, avg_reward -192.84017693591366
+13053
+33576
+8273
+episode_262 over, avg_reward -193.09989827676574
+34293
+31121
+27697
+episode_263 over, avg_reward -169.6508452742331
+32907
+404
+6828
+episode_264 over, avg_reward -169.69050018202867
+22010
+8022
+17691
+episode_265 over, avg_reward -215.75192892512405
+34119
+5469
+9340
+episode_266 over, avg_reward -192.52530158972465
+30101
+24117
+27380
+episode_267 over, avg_reward -193.4215826505825
+16305
+398
+30002
+episode_268 over, avg_reward -192.6680431712846
+9145
+4085
+11567
+episode_269 over, avg_reward -217.1586291049922
+10279
+29131
+19827
+episode_270 over, avg_reward -216.63413175918353
+15446
+31071
+19043
+episode_271 over, avg_reward -215.29185970018716
+14317
+523
+26738
+episode_272 over, avg_reward -193.2591478074879
+4668
+29065
+16860
+episode_273 over, avg_reward -192.6841186546477
+24486
+6106
+2637
+episode_274 over, avg_reward -193.80085796967774
+30194
+9536
+9054
+episode_275 over, avg_reward -215.0374102498106
+8305
+26010
+7191
+episode_276 over, avg_reward -193.45910226236734
+31510
+19712
+22676
+episode_277 over, avg_reward -216.144906726017
+17471
+25130
+21653
+episode_278 over, avg_reward -239.39541536641616
+12963
+23654
+14925
+episode_279 over, avg_reward -238.4932866516972
+22173
+30620
+3861
+episode_280 over, avg_reward -193.05015531294666
+4876
+21956
+3507
+episode_281 over, avg_reward -193.34900532360913
+32654
+32015
+21286
+episode_282 over, avg_reward -193.09062977054245
+29947
+27123
+24466
+episode_283 over, avg_reward -191.46158252828923
+15162
+11138
+323
+episode_284 over, avg_reward -216.0515923249632
+22795
+27159
+22253
+episode_285 over, avg_reward -216.56740782879817
+11936
+17744
+21520
+episode_286 over, avg_reward -238.1125349559918
+34524
+32416
+7359
+episode_287 over, avg_reward -170.38358336620175
+23998
+26480
+17114
+episode_288 over, avg_reward -214.8687261055718
+9013
+21628
+24660
+episode_289 over, avg_reward -238.96171117342385
+24418
+561
+27753
+episode_290 over, avg_reward -192.39696271353134
+30794
+15142
+11679
+episode_291 over, avg_reward -216.8336998081522
+27153
+16923
+8812
+episode_292 over, avg_reward -216.60808544690056
+5303
+27940
+32725
+episode_293 over, avg_reward -168.84972963919105
+14651
+7889
+12413
+episode_294 over, avg_reward -215.25943210872052
+12450
+22055
+18586
+episode_295 over, avg_reward -238.68670635907856
+28617
+12852
+6360
+episode_296 over, avg_reward -191.32920292920812
+29239
+2199
+5699
+episode_297 over, avg_reward -167.09903938038974
+7064
+12796
+14711
+episode_298 over, avg_reward -215.5139130506258
+4677
+14003
+1371
+episode_299 over, avg_reward -191.4195910982114
+12555
+842
+17428
+episode_300 over, avg_reward -215.60653624444032
+20388
+20276
+5019
+episode_301 over, avg_reward -215.63616228604658
+29579
+22778
+5716
+episode_302 over, avg_reward -191.91670392385228
+5875
+19296
+13987
+episode_303 over, avg_reward -216.69504612961464
+6222
+34106
+7836
+episode_304 over, avg_reward -167.69304396787666
+21273
+21903
+21373
+episode_305 over, avg_reward -238.83498500308053
+14330
+9355
+15226
+episode_306 over, avg_reward -238.02910148736206
+25546
+2954
+24547
+episode_307 over, avg_reward -216.00875303405667
+6480
+14940
+11121
+episode_308 over, avg_reward -214.05051874598598
+22375
+26772
+28083
+episode_309 over, avg_reward -191.49530262089377
+32368
+18852
+5667
+episode_310 over, avg_reward -191.50137120827355
+12001
+33848
+6783
+episode_311 over, avg_reward -191.99033269858185
+17972
+22608
+32157
+episode_312 over, avg_reward -216.04050299914334
+13637
+20411
+19640
+episode_313 over, avg_reward -240.24338746426304
+1016
+14224
+1378
+episode_314 over, avg_reward -192.5161386438945
+30616
+28371
+25894
+episode_315 over, avg_reward -193.37391147275832
+13452
+13446
+4926
+episode_316 over, avg_reward -216.04163041520624
+7852
+24787
+32366
+episode_317 over, avg_reward -192.95299310663407
+11405
+21780
+14022
+episode_318 over, avg_reward -240.0716266428518
+33059
+5124
+22798
+episode_319 over, avg_reward -190.92962108587153
+18184
+10852
+20031
+episode_320 over, avg_reward -241.96671645278585
+978
+17109
+18911
+episode_321 over, avg_reward -216.61163602407325
+27028
+17554
+29936
+episode_322 over, avg_reward -190.35168784571263
+8813
+9076
+19469
+episode_323 over, avg_reward -241.9468025173475
+31496
+7676
+4719
+episode_324 over, avg_reward -165.27741391455007
+18745
+21902
+27923
+episode_325 over, avg_reward -216.53137345701782
+24370
+19175
+22179
+episode_326 over, avg_reward -241.19276760324837
+26623
+26159
+5847
+episode_327 over, avg_reward -190.46764449908798
+6725
+31431
+15769
+episode_328 over, avg_reward -189.868374256925
+28949
+4550
+14699
+episode_329 over, avg_reward -189.61403310184153
+2059
+6393
+14076
+episode_330 over, avg_reward -191.52996468118366
+26590
+31825
+15721
+episode_331 over, avg_reward -191.54467447998357
+21001
+3102
+32966
+episode_332 over, avg_reward -190.86876545255234
+949
+7263
+17038
+episode_333 over, avg_reward -189.94594808907175
+6235
+18222
+12918
+episode_334 over, avg_reward -215.6789649082688
+55
+15291
+17701
+episode_335 over, avg_reward -215.8073311715461
+32170
+3816
+12942
+episode_336 over, avg_reward -189.9753556066278
+6513
+7623
+6156
+episode_337 over, avg_reward -164.98997185773996
+8287
+3788
+2151
+episode_338 over, avg_reward -163.30283986307873
+16508
+13066
+18143
+episode_339 over, avg_reward -242.29986445739
+32493
+31607
+9725
+episode_340 over, avg_reward -189.5991858132128
+9575
+30068
+26841
+episode_341 over, avg_reward -190.62210435176164
+15991
+2277
+24969
+episode_342 over, avg_reward -215.86450478523759
+25907
+22710
+23318
+episode_343 over, avg_reward -242.18313502630812
+31148
+5585
+12093
+episode_344 over, avg_reward -188.61823784619045
+25794
+15919
+21229
+episode_345 over, avg_reward -242.5720511000774
+1930
+34766
+19355
+episode_346 over, avg_reward -190.4705323716545
+28058
+7652
+33889
+episode_347 over, avg_reward -161.87733759729846
+19628
+19150
+1333
+episode_348 over, avg_reward -216.48167197030307
+14551
+17115
+24192
+episode_349 over, avg_reward -243.40367055220074
+29323
+28882
+30567
+episode_350 over, avg_reward -162.0917057707886
+12373
+8784
+11042
+episode_351 over, avg_reward -242.9913703831503
+22469
+18678
+30530
+episode_352 over, avg_reward -216.21608927094042
+14445
+15238
+5555
+episode_353 over, avg_reward -217.73644862357636
+23012
+12413
+16183
+episode_354 over, avg_reward -242.58738814940872
+16402
+23187
+12974
+episode_355 over, avg_reward -243.3756607384221
+25012
+14152
+278
+episode_356 over, avg_reward -216.52060861562703
+7358
+11797
+2037
+episode_357 over, avg_reward -189.7946620660509
+15336
+6083
+29553
+episode_358 over, avg_reward -189.86061533659407
+29907
+13896
+18927
+episode_359 over, avg_reward -217.12271264686035
+19884
+33339
+29930
+episode_360 over, avg_reward -188.9162248601638
+wandb: Currently logged in as: wangyiwen. Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.13.5 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.13.4
+wandb: Run data is saved locally in /root/Project/grid/ippo_qmix/wandb/run-20221115_020935-imfnws4g
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run RBC_96_maxday_2.0
+wandb: ⭐️ View project at https://wandb.ai/wangyiwen/grid
+wandb: 🚀 View run at https://wandb.ai/wangyiwen/grid/runs/imfnws4g
+12844
+wandb: Waiting for W&B process to finish... (failed 1). Press Control-C to abort syncing.
+wandb: Synced RBC_96_maxday_2.0: https://wandb.ai/wangyiwen/grid/runs/imfnws4g
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20221115_020935-imfnws4g/logs
+Traceback (most recent call last):
+  File "main.py", line 87, in <module>
+    main()
+  File "main.py", line 57, in main
+    runner.run_marl()
+  File "/root/Project/grid/ippo_qmix/RBC_runner.py", line 41, in run_marl
+    total_reward += rewards
+TypeError: unsupported operand type(s) for +=: 'int' and 'list'

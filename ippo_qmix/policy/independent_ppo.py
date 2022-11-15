@@ -29,8 +29,8 @@ class IndependentPPO(BasePolicy):
                                                  lr=self.train_config.lr_critic)
 
         # 初始化路径
-        self.model_path = os.path.join(self.train_config.model_dir, self.env_config.learn_policy)
-        self.result_path = os.path.join(self.train_config.result_dir, self.env_config.learn_policy)
+        self.model_path = os.path.join(self.train_config.model_dir, self.env_config.learn_policy + '_' + str(self.n_agents))
+        self.result_path = os.path.join(self.train_config.result_dir, self.env_config.learn_policy + '_' + str(self.n_agents))
         self.init_path(self.model_path, self.result_path)
         self.ppo_actor_path = os.path.join(self.model_path, "ppo_actor.pth")
         self.ppo_critic_path = os.path.join(self.model_path, "ppo_critic.pth")

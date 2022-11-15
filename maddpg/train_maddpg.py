@@ -2,7 +2,6 @@ import argparse
 import multiprocessing
 import sys
 from pathlib import Path
-import gym
 import numpy as np
 import random
 import time
@@ -20,19 +19,29 @@ argv = parser.parse_args()
 
 reward_record = []
 
-#env config
-climate_zone = 1
-data_path = Path("./envs/data/Climate_Zone_"+str(climate_zone))
-buildings_states_actions = './envs/data/buildings_state_action_space.json'
-env_config_dict = {
-    "model_name":"192agents",
-    "data_path":data_path,
-    "climate_zone":climate_zone,
-    "buildings_states_actions_file":buildings_states_actions,
-    "hourly_timesteps":4,
-    "max_num_houses":None
+# env config
+with open("../config.yaml") as f:
+    config_dict = yaml.safe_load(f)
+    # env config
+env_config_dict = config_dict['environment']
+data_path = Path("../envs/data/Climate_Zone_" + str(env_config_dict['climate_zone']))
+buildings_states_actions = '../envs/data/buildings_state_action_space.json'
+
+n_agents = env_config_dict['houses_per_node'] * 32
+path = "../envs/data/" + str(n_agents) + "_agents/"
+
+grid_config_dict = {
+    "model_name": str(env_config_dict['houses_per_node'] * 32) + "agents",  # default 6*32 = 192
+    "data_path": data_path,
+    "climate_zone": env_config_dict['climate_zone'],
+    "buildings_states_actions_file": buildings_states_actions,
+    "hourly_timesteps": 4,
+    "max_num_houses": None,
+    "houses_per_node": env_config_dict['houses_per_node'],
+    "net_path": path + "case33.p",
+    "agent_path": path + "agent_" + str(n_agents) + "_zone_" + str(env_config_dict['climate_zone']) + ".pickle"
 }
-env = GridEnv(**env_config_dict)
+env = GridEnv(**grid_config_dict)
 
 np.random.seed(1234)
 th.manual_seed(1234)
@@ -51,6 +60,12 @@ maddpg = MADDPG(n_agents, n_states, n_actions, batch_size, capacity,
                 episodes_before_train)
 
 FloatTensor = th.cuda.FloatTensor if maddpg.use_cuda else th.FloatTensor
+
+run = wandb.init(project="grid",
+                 entity="wangyiwen",
+                 config={**env_config_dict},
+                 name=f"{env_config_dict['learn_policy']}" + f"{env.n_agents}")
+
 for i_episode in range(n_episode):
     obs, _ = env.reset()
     obs = np.stack(obs)
@@ -62,7 +77,7 @@ for i_episode in range(n_episode):
 
         obs = obs.type(FloatTensor)
         action = maddpg.select_action(obs).data.cpu()
-        reward, done, _ = env.step(action.numpy())
+        reward, done, info = env.step(action.numpy())
         obs_ = env.get_obs()
 
         reward = th.FloatTensor(reward).type(FloatTensor)
@@ -84,9 +99,5 @@ for i_episode in range(n_episode):
     reward_record.append(total_reward)
 
     # Save model
-    if i_episode % 30 == 0:
-        th.save({f'Actor{i}': MADDPG.actors[i] for i in range(n_agents)}, "./maddpg_model/Actor.tar")
-        th.save({f'Critic{i}': MADDPG.critics[i] for i in range(n_agents)}, "./maddpg_model/Critic.tar")
-        print('Model saved!')
 
 

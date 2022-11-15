@@ -43,7 +43,7 @@ class RunnerSimpleSpreadEnv(object):
         self.result_path = os.path.join(self.results_path, "result.csv")
 
     def run_marl(self):
-        self.init_saved_model()
+        # self.init_saved_model() TODO:disabled load saved model
         run_episode = self.train_config.run_episode_before_train if "ppo" in self.env_config.learn_policy else 1
         for epoch in range(self.current_epoch, self.train_config.epochs + 1):
             # 在正式开始训练之前做一些动作并将信息存进记忆单元中

@@ -7,7 +7,6 @@ import argparse
 import multiprocessing
 import sys
 from pathlib import Path
-import gym
 import numpy as np
 import random
 import time
@@ -22,7 +21,7 @@ from utils.config_utils import ConfigObjectFactory
 
 
 def main():
-    with open("./config.yaml") as f:
+    with open("../config.yaml") as f:
         config_dict = yaml.safe_load(f)
     # env config
     env_config_dict = config_dict['environment']
@@ -45,11 +44,11 @@ def main():
     }
     env = GridEnv(**grid_config_dict)
 
-
+    maxday = env_config_dict["max_cycles"] / 96
     run = wandb.init(project="grid",
                      entity="wangyiwen",
                      config={**env_config_dict},
-                     name=f"ippo" + f"{env.n_agents}")
+                     name=f"{env_config_dict['learn_policy']}" + f"_{env.n_agents}" + f"_maxday_{maxday}")
 
     if env_config_dict["learn_policy"] == "RBC":
         runner = RunnerRBC(env)
