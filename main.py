@@ -15,21 +15,21 @@ import wandb
 import torch
 
 from envs.smart_grid.smart_grid_env import GridEnv
-from runner import RunnerSimpleSpreadEnv
+from runner import RunnerGrid
 from RBC_runner import RunnerRBC
 from utils.config_utils import ConfigObjectFactory
 
 
 def main():
-    with open("../config.yaml") as f:
+    with open("./config.yaml") as f:
         config_dict = yaml.safe_load(f)
     # env config
     env_config_dict = config_dict['environment']
-    data_path = Path("../envs/data/Climate_Zone_" + str(env_config_dict['climate_zone']))
-    buildings_states_actions = '../envs/data/buildings_state_action_space.json'
+    data_path = Path("./envs/data/Climate_Zone_" + str(env_config_dict['climate_zone']))
+    buildings_states_actions = './envs/data/buildings_state_action_space.json'
 
     n_agents = env_config_dict['houses_per_node'] * 32
-    path = "../envs/data/" + str(n_agents) + "_agents/"
+    path = "./envs/data/" + str(n_agents) + "_agents/"
 
     grid_config_dict = {
         "model_name": str(env_config_dict['houses_per_node']*32)+"agents", # default 6*32 = 192
@@ -53,7 +53,7 @@ def main():
     if env_config_dict["learn_policy"] == "RBC":
         runner = RunnerRBC(env)
     else:
-        runner = RunnerSimpleSpreadEnv(env)
+        runner = RunnerGrid(env)
     runner.run_marl()
 
     run.finish()
