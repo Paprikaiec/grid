@@ -26,9 +26,7 @@ class RunnerGrid(object):
             self.batch_episode_memory = CommBatchEpisodeMemory(continuous_actions=True)
         else:
             self.memory = CommMemory()
-            self.batch_episode_memory = CommBatchEpisodeMemory(continuous_actions=False,
-                                                               n_actions=self.env_info['n_actions'],
-                                                               n_agents=self.env_info['n_agents'])
+            self.batch_episode_memory = CommBatchEpisodeMemory(continuous_actions=True)
         self.lock = threading.Lock()
         # 初始化路径
         self.results_path = self.agents.get_results_path()
@@ -36,7 +34,9 @@ class RunnerGrid(object):
         self.result_path = os.path.join(self.results_path, "result.csv")
 
     def run_marl(self):
-        # self.init_saved_model() TODO:disabled load saved model
+        # TODO:disabled load saved model
+        self.init_saved_model()
+
         run_episode = self.train_config.run_episode_before_train if "ppo" in self.env_config.learn_policy else 1
         for epoch in range(self.current_epoch, self.train_config.epochs + 1):
             # 在正式开始训练之前做一些动作并将信息存进记忆单元中
@@ -95,8 +95,8 @@ class RunnerGrid(object):
             self.result_buffer.append(one_result_buffer)
 
             # TODO: disable save model
-            # if epoch % self.train_config.save_epoch == 0 and epoch != 0:
-            #     self.save_model_and_result(epoch)
+            if epoch % self.train_config.save_epoch == 0 and epoch != 0:
+                self.save_model_and_result(epoch)
 
             # wandb log
             stat['avg_reward'] = avg_reward
@@ -141,26 +141,13 @@ class RunnerGrid(object):
     def evaluate(self):
         total_rewards = 0
         for i in range(self.train_config.evaluate_epoch):
-            if "grid_wise_control" in self.env_config.learn_policy:
-                self.env.reset()
-                terminated = False
-                cycle = 0
-                while not terminated and cycle < self.env_config.max_cycles:
-                    grid_input = self.env.get_grid_input()
-                    unit_pos = self.env.get_agents_approximate_pos()
-                    actions_with_name, _, _ = self.agents.choose_actions_in_grid(unit_pos=unit_pos,
-                                                                                 grid_input=grid_input)
-                    _, rewards, finish_game, _ = self.env.step(actions_with_name)
-                    total_rewards += rewards
-                    cycle += 1
-            else:
-                obs = self.env.reset()
-                finish_game = False
-                cycle = 0
-                while not finish_game and cycle < self.env_config.max_cycles:
-                    actions_with_name, actions, _ = self.agents.choose_actions(obs)
-                    obs_next, rewards, finish_game, _ = self.env.step(actions_with_name)
-                    total_rewards += rewards
-                    obs = obs_next
-                    cycle += 1
+            obs = self.env.reset()
+            finish_game = False
+            cycle = 0
+            while not finish_game and cycle < self.env_config.max_cycles:
+                actions_with_name, actions, _ = self.agents.choose_actions(obs)
+                obs_next, rewards, finish_game, _ = self.env.step(actions_with_name)
+                total_rewards += rewards
+                obs = obs_next
+                cycle += 1
         return total_rewards / self.train_config.evaluate_epoch

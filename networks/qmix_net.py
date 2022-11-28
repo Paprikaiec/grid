@@ -7,12 +7,12 @@ import torch.nn.functional as F
 
 class RNN(nn.Module, ABC):
 
-    def __init__(self, input_shape: int, n_actions: int, rnn_hidden_dim: int):
+    def __init__(self, input_shape: int, rnn_hidden_dim: int):
         super(RNN, self).__init__()
         self.rnn_hidden_dim = rnn_hidden_dim
         self.fc1 = nn.Linear(input_shape, self.rnn_hidden_dim)
         self.rnn = nn.GRUCell(self.rnn_hidden_dim, self.rnn_hidden_dim)
-        self.fc2 = nn.Linear(self.rnn_hidden_dim, n_actions)
+        self.fc2 = nn.Linear(self.rnn_hidden_dim, 1)
 
     def forward(self, obs, hidden_state):
         x = torch.relu(self.fc1(obs))

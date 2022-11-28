@@ -15,18 +15,18 @@ class CMAQMix(BasePolicy):
         self.train_config = ConfigObjectFactory.get_train_config()
         self.env_config = ConfigObjectFactory.get_environment_config()
         self.n_agents = env_info['n_agents']
-        self.n_actions = env_info['n_actions']
-        input_shape = env_info['obs_space'] + self.n_agents + self.n_actions
-        state_space = env_info['state_space']
+        self.action_dim = env_info['action_dim']
+        input_shape = env_info['obs_shape'] + self.n_agents + self.action_dim
+        state_shape = env_info['state_shape']
 
         # 神经网络 todo: make it adjustable
         self.rnn_hidden_dim = 64
         # 每个agent选动作的网络
-        self.rnn_eval = RNN(input_shape, self.n_actions, self.rnn_hidden_dim)
-        self.rnn_target = RNN(input_shape, self.n_actions, self.rnn_hidden_dim)
+        self.rnn_eval = RNN(input_shape, self.rnn_hidden_dim)
+        self.rnn_target = RNN(input_shape, self.rnn_hidden_dim)
         # 把agentsQ值加起来的网络
-        self.qmix_net_eval = QMixNet(self.n_agents, state_space)
-        self.qmix_net_target = QMixNet(self.n_agents, state_space)
+        self.qmix_net_eval = QMixNet(self.n_agents, state_shape)
+        self.qmix_net_target = QMixNet(self.n_agents, state_shape)
         self.init_wight()
         self.eval_parameters = list(self.qmix_net_eval.parameters()) + list(self.rnn_eval.parameters())
         self.optimizer = torch.optim.RMSprop(self.eval_parameters, lr=self.train_config.lr_critic)
@@ -64,7 +64,6 @@ class CMAQMix(BasePolicy):
         state_next = batch_data['state_next'].to(self.device)
         rewards = batch_data['rewards'].unsqueeze(dim=-1).to(self.device)
         actions = batch_data['actions'].long().to(self.device)
-        actions_onehot = batch_data['actions_onehot'].to(self.device)
         terminated = batch_data['terminated'].unsqueeze(dim=-1).to(self.device)
 
         q_evals, q_targets = [], []
@@ -72,7 +71,7 @@ class CMAQMix(BasePolicy):
         self.init_hidden(batch_size)
         for i in range(batch_data['max_step']):
             inputs, inputs_next = self._get_inputs(batch_size, i, obs[:, i], obs_next[:, i],
-                                                   actions_onehot)
+                                                   actions)
             q_eval, self.eval_hidden = self.rnn_eval(inputs, self.eval_hidden)
             q_target, self.target_hidden = self.rnn_target(inputs_next, self.target_hidden)
             # 将q值reshape, 以n_agents分开
@@ -83,9 +82,7 @@ class CMAQMix(BasePolicy):
         # 将上面的到的q值聚合
         q_evals = torch.stack(q_evals, dim=1)
         q_targets = torch.stack(q_targets, dim=1)
-        # 找出所选动作对应的q值
-        q_evals = torch.gather(q_evals, dim=3, index=actions).squeeze(3)
-        q_targets = q_targets.max(dim=3)[0]
+        # todo q_evals q_targets shape: batch_size X max_step X agents_num X n_actions
         # 将q值和state输入mix网络
         q_total_eval = self.qmix_net_eval(q_evals, state)
         q_total_target = self.qmix_net_target(q_targets, state_next)
@@ -105,7 +102,7 @@ class CMAQMix(BasePolicy):
             self.qmix_net_target.load_state_dict(self.qmix_net_eval.state_dict())
 
     def _get_inputs(self, batch_size: int, batch_index: int, obs: Tensor, obs_next: Tensor,
-                    actions_onehot: Tensor) -> tuple:
+                    actions: Tensor) -> tuple:
         """
             获取q网络的输入值, 将动作放入obs中
             :return:
@@ -114,10 +111,10 @@ class CMAQMix(BasePolicy):
         inputs.append(obs)
         inputs_next.append(obs_next)
         if batch_index == 0:
-            inputs.append(torch.zeros_like(actions_onehot[:, batch_index]))
+            inputs.append(torch.zeros_like(actions[:, batch_index]))
         else:
-            inputs.append(actions_onehot[:, batch_index - 1])
-        inputs_next.append(actions_onehot[:, batch_index])
+            inputs.append(actions[:, batch_index - 1])
+        inputs_next.append(actions[:, batch_index])
         inputs.append(torch.eye(self.n_agents).unsqueeze(0).expand(batch_size, -1, -1).to(self.device))
         inputs_next.append(torch.eye(self.n_agents).unsqueeze(0).expand(batch_size, -1, -1).to(self.device))
         inputs = torch.cat([x.reshape(batch_size * self.n_agents, -1) for x in inputs], dim=1)

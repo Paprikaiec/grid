@@ -1,5 +1,5 @@
 environment: # max: 365*96
-  learn_policy: "independent_ppo"
+  learn_policy: "cmaqmix"
   max_cycles: 192 # 96*2
   houses_per_node: 1
   climate_zone: 1
