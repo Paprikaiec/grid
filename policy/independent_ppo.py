@@ -17,7 +17,7 @@ class IndependentPPO(BasePolicy):
         self.train_config = ConfigObjectFactory.get_train_config()
         self.env_config = ConfigObjectFactory.get_environment_config()
         self.n_agents = env_info['n_agents']
-        self.action_dim = env_info['n_actions']
+        self.action_dim = env_info['action_dim']
 
         # 初始化网络
         self.rnn_hidden_dim = 64
@@ -30,7 +30,11 @@ class IndependentPPO(BasePolicy):
 
         # 初始化路径
         self.model_path = os.path.join(self.train_config.model_dir, self.env_config.learn_policy + '_' + str(self.n_agents))
-        self.result_path = os.path.join(self.train_config.result_dir, self.env_config.learn_policy + '_' + str(self.n_agents))
+        if self.env_config.mode == "evaluate":
+            self.result_path = os.path.join(self.train_config.result_dir,
+                                            "evaluate_" + self.env_config.learn_policy + '_' + str(self.n_agents))
+        else:
+            self.result_path = os.path.join(self.train_config.result_dir, self.env_config.learn_policy + '_' + str(self.n_agents))
         self.init_path(self.model_path, self.result_path)
         self.ppo_actor_path = os.path.join(self.model_path, "ppo_actor.pth")
         self.ppo_critic_path = os.path.join(self.model_path, "ppo_critic.pth")

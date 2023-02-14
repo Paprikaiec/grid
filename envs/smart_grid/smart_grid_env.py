@@ -393,3 +393,6 @@ class GridEnv(MultiAgentEnv):
                 max_adjacent_agents = len(adjacent_list)
 
         return max_adjacent_agents * self.single_agent_obs_size
+
+    def get_num_of_agents(self):
+        return len(self.agents)

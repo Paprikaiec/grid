@@ -15,8 +15,7 @@ import wandb
 import torch
 
 from envs.smart_grid.smart_grid_env import GridEnv
-from runner import RunnerGrid
-from RBC_runner import RunnerRBC
+from runner import *
 from utils.config_utils import ConfigObjectFactory
 
 
@@ -48,12 +47,16 @@ def main():
     run = wandb.init(project="grid",
                      entity="wangyiwen",
                      config={**env_config_dict},
-                     name=f"{env_config_dict['learn_policy']}" + f"_{env.n_agents}" + f"_maxday_{maxday}")
+                     name=f"{env_config_dict['learn_policy']}" + f"_zone_{env_config_dict['climate_zone']}")
+                     # f"{env_config_dict['learn_policy']}" + f"_{env.n_agents}" + f"_maxday_{maxday}")
 
     if env_config_dict["learn_policy"] == "RBC":
         runner = RunnerRBC(env)
+    elif "evaluate" in env_config_dict["mode"]:
+        runner = Runnerevaluate(env)
     else:
         runner = RunnerGrid(env)
+
     runner.run_marl()
 
     run.finish()

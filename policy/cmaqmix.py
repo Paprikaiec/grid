@@ -33,7 +33,11 @@ class CMAQMix(BasePolicy):
 
         # 初始化路径
         self.model_path = os.path.join(self.train_config.model_dir, self.env_config.learn_policy)
-        self.result_path = os.path.join(self.train_config.result_dir, self.env_config.learn_policy)
+        if self.env_config.mode == "evaluate":
+            self.result_path = os.path.join(self.train_config.result_dir,
+                                            "evaluate_" + self.env_config.learn_policy + '_' + str(self.n_agents))
+        else:
+            self.result_path = os.path.join(self.train_config.result_dir, self.env_config.learn_policy + '_' + str(self.n_agents))
         self.init_path(self.model_path, self.result_path)
         self.rnn_eval_path = os.path.join(self.model_path, "rnn_eval.pth")
         self.rnn_target_path = os.path.join(self.model_path, "rnn_target.pth")

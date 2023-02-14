@@ -27,17 +27,17 @@ class MyAgents:
 
         # 初始化学习策略，需要注意的是不同算法对应不通的动作空间(连续/离散)
         # 下面三个算法作为baseline
-        if self.env_config.learn_policy == "cmaqmix":
+        if "cmaqmix" in self.env_config.learn_policy:
             self.action_dim = self.env_info['action_dim']
             self.action_space = self.env_info['action_space']
             self.obs_shape = self.env_info['obs_shape']
             self.policy = CMAQMix(self.env_info)
 
-        elif self.env_config.learn_policy == "centralized_ppo":
+        elif "centralized_ppo" in self.env_config.learn_policy:
             self.action_space = self.env_info['n_actions']
             self.policy = CentralizedPPO(self.env_info)
 
-        elif self.env_config.learn_policy == "independent_ppo":
+        elif "independent_ppo" in self.env_config.learn_policy:
             self.action_space = self.env_info['action_space']
             self.policy = IndependentPPO(self.env_info)
         else:
@@ -60,7 +60,7 @@ class MyAgents:
         if isinstance(self.policy, CMAQMix):
             actions_ind = [i for i in range(self.action_dim)]
             for i, agent in enumerate(self.env_info['agents_name']):
-                if random.uniform(0, 1) > self.train_config.epsilon:
+                if (self.env_config.mode == "train") and random.uniform(0, 1) > self.train_config.epsilon:
                     action = self.action_space.sample() # todo:
                 else: # todo implement CMA-ES choose action below
                     inputs = list()
