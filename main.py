@@ -56,7 +56,6 @@ def main():
         runner = Runnerevaluate(env)
     else:
         runner = RunnerGrid(env)
-
     runner.run_marl()
 
     run.finish()

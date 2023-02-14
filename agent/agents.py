@@ -105,7 +105,7 @@ class MyAgents:
                 log_probs.append(dist.log_prob(torch.Tensor(action).to(self.device)))
                 actions_with_name[agent_name] = action
                 actions.append(action)
-        elif isinstance(self.policy, IndependentPPO):
+        elif isinstance(self.policy, IndependentPPO): # TODO: suitable for cuppo?
             obs = obs.to(self.device)
             for i, agent_name in enumerate(self.env_info['agents_name']):
                 with torch.no_grad():
