@@ -73,7 +73,7 @@ class GridEnv(MultiAgentEnv):
     def get_env_info(self):
         env_info = {"state_shape": self.get_state_size(),
                     "obs_shape": self.get_obs_size(),
-                    "n_actions": self.get_total_actions(),
+                    "action_dim": self.get_total_actions(),
                     "action_space": self.buildings[self.agents[0]].action_space,
                     "agents_name": self.agents,
                     "n_agents": self.n_agents,

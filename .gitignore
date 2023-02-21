@@ -5,3 +5,4 @@ envs.egg-info/*
 **/.ipynb_checkpoints/*
 **/*.ipynb
 **/wandb/*
+**/nohup.out

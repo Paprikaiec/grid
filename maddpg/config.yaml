@@ -1,0 +1,16 @@
+environment: # max: 365*96
+  mode: "evaluate"
+  learn_policy: "cmaqmixV2"
+  max_cycles: 192 # 96*2
+  houses_per_node: 1
+  climate_zone: 2
+  hourly_timesteps: 4
+
+train:
+  epochs: 360
+  show_evaluate_epoch: 100
+  evaluate_epoch: 2
+
+
+
+

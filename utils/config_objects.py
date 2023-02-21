@@ -5,6 +5,7 @@ class EnvironmentConfig:
         self.grid_size = 16
         self.max_cycles = 25  #default example:40
         self.learn_policy = "grid_wise_control" #default example:'independent_ppo'
+        self.mode = "train"
 
 
 class TrainConfig:
