@@ -15,7 +15,7 @@ import pickle
 
 class GridEnv(MultiAgentEnv):
     def __init__(self, model_name, data_path, climate_zone, buildings_states_actions_file, hourly_timesteps,
-                 houses_per_node=6, cluster_adjacent_bus_num=6,
+                 episode_limit, cluster_adjacent_bus_num=6,
                  save_memory=True, building_ids=None, nclusters=2, randomseed=2, max_num_houses=None, percent_rl=1,
                  net_path="./", agent_path="./"):
         self.model_name = model_name
@@ -68,9 +68,7 @@ class GridEnv(MultiAgentEnv):
         self.v_lower = 0.95
 
         self.n_agents = len(self.agents)
-        with open("./config.yaml") as file:
-            config = yaml.safe_load(file)
-        self.episode_limit = config["environment"]["max_cycles"] # 5 days
+        self.episode_limit = episode_limit # 5 days
 
     def get_env_info(self):
         env_info = {"state_shape": self.get_state_size(),
@@ -172,9 +170,14 @@ class GridEnv(MultiAgentEnv):
 
     def get_obs(self):
         all_state_dict = {k: np.array(self.buildings[k].get_state(self.net)) for k in self.agents}
+        if self.steps <= 1:
+            voltage_array = np.ones(33)
+        else:
+            voltage_array = self.net.res_bus['vm_pu'].sort_index().to_numpy()
+
         pad_obs_list = []
         for agent in self.rl_agents:
-            agent_obs_array = np.concatenate([all_state_dict[neighbor] for neighbor in self.clusters[agent]])
+            agent_obs_array = np.concatenate((all_state_dict[agent], voltage_array[self.clusters[agent]]), axis=None)
             pad_obs_list.append(np.concatenate([agent_obs_array, np.zeros(self.obs_size-agent_obs_array.shape[0])]))
         return np.array(pad_obs_list)
 
@@ -338,7 +341,7 @@ class GridEnv(MultiAgentEnv):
         self.reward_data += [sum(rewards.values())]
         # self.all_rewards += [rewards.values()]
         # print(agents)
-        return sum(rewards.values())
+        return list(rewards.values())
 
     def _get_done(self):
         # dones = {k: (self.buildings[k].time_step >= self.hourly_timesteps*8760) for k in agents}
@@ -377,12 +380,19 @@ class GridEnv(MultiAgentEnv):
         G[id2, id1] = 1
         temp = matrix_power(G, self.cluster_adjacent_bus_num)
 
-        # clusters: BuildingsID --> adjacent bus BuildingsID
+        # clusters: BuildingsID --> adjacent bus
         clusters = dict()
         for agent in self.net.load['name'].tolist():
-            agent_bus = self.net.load.loc[self.net.load['name']==agent, 'bus']
-            adjacent_bus = np.where(temp[agent_bus].squeeze()>0)[0]
-            clusters[agent] = self.net.load.loc[self.net.load['bus'].isin(adjacent_bus), 'name'].tolist()
+            agent_bus = self.net.load.loc[self.net.load['name'] == agent, 'bus']
+            adjacent_bus = np.where(temp[agent_bus].squeeze() > 0)[0]
+            clusters[agent] = adjacent_bus
+
+        # # clusters: BuildingsID --> adjacent bus BuildingsID
+        # clusters = dict()
+        # for agent in self.net.load['name'].tolist():
+        #     agent_bus = self.net.load.loc[self.net.load['name']==agent, 'bus']
+        #     adjacent_bus = np.where(temp[agent_bus].squeeze()>0)[0]
+        #     clusters[agent] = self.net.load.loc[self.net.load['bus'].isin(adjacent_bus), 'name'].tolist()
 
         return clusters
 
@@ -392,4 +402,4 @@ class GridEnv(MultiAgentEnv):
             if len(adjacent_list) > max_adjacent_agents:
                 max_adjacent_agents = len(adjacent_list)
 
-        return max_adjacent_agents * self.single_agent_obs_size
+        return max_adjacent_agents + self.single_agent_obs_size

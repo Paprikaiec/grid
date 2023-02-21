@@ -32,9 +32,9 @@ class Actor(nn.Module):
         self.FC2 = nn.Linear(500, 128)
         self.FC3 = nn.Linear(128, dim_action)
 
-    # action output between -2 and 2
+    # action output between -1 and 1
     def forward(self, obs):
         result = F.relu(self.FC1(obs))
         result = F.relu(self.FC2(result))
-        result = F.tanh(self.FC3(result))
+        result = th.tanh(self.FC3(result))
         return result

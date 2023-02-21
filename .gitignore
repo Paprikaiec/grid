@@ -1,0 +1,7 @@
+envs.egg-info/*
+**/__pycache__/
+**/*.pickle
+**/*.p
+**/.ipynb_checkpoints/*
+**/*.ipynb
+**/wandb/*

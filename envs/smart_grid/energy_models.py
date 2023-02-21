@@ -227,6 +227,13 @@ class Building:
             reward = -1*(10*dev)**2
         return reward
 
+    def get_absolute_voltage(self, net):
+        if self.time_step <= 1:
+            v = 1.0
+        else:
+            v = float(net.res_bus['vm_pu'][net.load.loc[net.load['name'] == self.buildingId].bus])
+        return v
+
     def get_state(self, net):
         s = []
         for state_name, value in self.enabled_states.items():

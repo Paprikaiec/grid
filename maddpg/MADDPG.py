@@ -66,7 +66,7 @@ class MADDPG:
         if self.episode_done <= self.episodes_before_train:
             return None, None
 
-        ByteTensor = th.cuda.ByteTensor if self.use_cuda else th.ByteTensor
+        ByteTensor = th.cuda.BoolTensor if self.use_cuda else th.BoolTensor
         FloatTensor = th.cuda.FloatTensor if self.use_cuda else th.FloatTensor
 
         c_loss = []

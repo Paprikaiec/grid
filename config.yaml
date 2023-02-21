@@ -1,12 +1,12 @@
 environment: # max: 365*96
-  learn_policy: "independent_ppo"
+  learn_policy: "maddpg"
   max_cycles: 192 # 96*2
-  houses_per_node: 1
+  houses_per_node: 2
   climate_zone: 1
   hourly_timesteps: 4
 
 train:
-  epochs: 360
+  epochs: 100
   show_evaluate_epoch: 100
   evaluate_epoch: 2
 
