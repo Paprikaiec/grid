@@ -22,7 +22,7 @@ def hard_update(target, source):
         target_param.data.copy_(source_param.data)
 
 
-class MADDPG:
+class mean_MADDPG:
     def __init__(self, n_agents, dim_obs, dim_act, batch_size,
                  capacity, episodes_before_train):
         self.actors = [Actor(dim_obs, dim_act) for i in range(n_agents)]
@@ -61,6 +61,7 @@ class MADDPG:
         self.steps_done = 0
         self.episode_done = 0
 
+    @property
     def update_policy(self):
         # do not train until exploration is enough
         if self.episode_done <= self.episodes_before_train:
@@ -78,8 +79,11 @@ class MADDPG:
                                                  batch.next_states)))
             # state_batch: batch_size x n_agents x dim_obs
             state_batch = th.stack(batch.states).type(FloatTensor)
-            action_batch = th.stack(batch.actions).type(FloatTensor)
+            # current_action_batch: batch_size x action_dim
+            current_action_batch = batch.actions[agent].clone().detach().type(FloatTensor)
             reward_batch = th.stack(batch.rewards).type(FloatTensor)
+            mean_action_batch = th.stack(batch.mean_actions).type(FloatTensor) # todo: batch_size x act_dim
+
             # : (batch_size_non_final) x n_agents x dim_obs
             non_final_next_states = th.stack(
                 [s for s in batch.next_states
@@ -87,27 +91,24 @@ class MADDPG:
 
             # for current agent
             whole_state = state_batch.view(self.batch_size, -1)
-            whole_action = action_batch.view(self.batch_size, -1)
+            whole_action = th.cat((current_action_batch, mean_action_batch), dim=1)
             self.critic_optimizer[agent].zero_grad()
             current_Q = self.critics[agent](whole_state, whole_action)
 
-            non_final_next_actions = [
-                self.actors_target[i](non_final_next_states[:,
-                                                            i,
-                                                            :]) for i in range(
-                                                                self.n_agents)]
-            non_final_next_actions = th.stack(non_final_next_actions)
-            non_final_next_actions = (
-                non_final_next_actions.transpose(0,
-                                                 1).contiguous())
+            non_final_next_all_actions = [
+                self.actors_target[i](non_final_next_states[:, i, :]) for i in range(self.n_agents)]
+            non_final_next_all_actions = th.stack(non_final_next_all_actions) # todo: n_agents x batch_size? x act_dim
+            non_final_next_mean_actions = th.mean(non_final_next_all_actions, axis=0) # todo: batch_size? x act_dim
+            non_final_next_actions = th.cat(
+                (non_final_next_all_actions[agent], non_final_next_mean_actions), dim=1) # todo: batch_size? x 2*act_dim
+
 
             target_Q = th.zeros(
                 self.batch_size).type(FloatTensor)
 
             target_Q[non_final_mask] = self.critics_target[agent](
                 non_final_next_states.view(-1, self.n_agents * self.n_states),
-                non_final_next_actions.view(-1,
-                                            self.n_agents * self.n_actions)
+                non_final_next_actions.view(-1, 2*self.n_actions)
             ).squeeze()
             # scale_reward: to scale reward in Q functions
 
@@ -120,10 +121,11 @@ class MADDPG:
 
             self.actor_optimizer[agent].zero_grad()
             state_i = state_batch[:, agent, :]
-            action_i = self.actors[agent](state_i)
-            ac = action_batch.clone()
-            ac[:, agent, :] = action_i
-            whole_action = ac.view(self.batch_size, -1)
+            action_i = self.actors[agent](state_i) # batch_size x act_dim
+            # ac = action_batch.clone()
+            # ac[:, agent, :] = action_i
+            mean_action_batch = mean_action_batch + (action_i - current_action_batch)/self.n_agents
+            whole_action = th.cat((action_i, mean_action_batch), dim=1)
             actor_loss = -self.critics[agent](whole_state, whole_action)
             actor_loss = actor_loss.mean()
             actor_loss.backward()

@@ -10,7 +10,7 @@ import wandb
 import torch as th
 
 from envs.smart_grid.smart_grid_env import GridEnv
-from MADDPG import MADDPG
+from mean_MADDPG import mean_MADDPG
 from params import scale_reward
 
 parser = argparse.ArgumentParser()
@@ -47,19 +47,19 @@ np.random.seed(1234)
 th.manual_seed(1234)
 
 n_agents = env.n_agents
-n_states = env.get_obs_size() # maybe obs in maddpg
+n_states = env.get_obs_size() # maybe obs in mean_maddpg
 n_actions = env.get_total_actions()
-capacity = 750
-batch_size = 32
+capacity = 750 # default: 1500
+batch_size = 32 # default: 32
 
 n_episode = config_dict["train"]["epochs"]
 max_steps = config_dict["environment"]["max_cycles"]
 episodes_before_train = 3
 
-maddpg = MADDPG(n_agents, n_states, n_actions, batch_size, capacity,
+mean_maddpg = mean_MADDPG(n_agents, n_states, n_actions, batch_size, capacity,
                 episodes_before_train)
 
-FloatTensor = th.cuda.FloatTensor if maddpg.use_cuda else th.FloatTensor
+FloatTensor = th.cuda.FloatTensor if mean_maddpg.use_cuda else th.FloatTensor
 
 run = wandb.init(project="grid",
                  entity="wangyiwen",
@@ -77,7 +77,7 @@ for i_episode in range(n_episode):
     for t in range(max_steps):
 
         obs = obs.type(FloatTensor)
-        action = maddpg.select_action(obs).data.cpu()
+        action = mean_maddpg.select_action(obs).data.cpu()
         reward, done, info = env.step(action.numpy())
         obs_ = env.get_obs()
 
@@ -91,17 +91,18 @@ for i_episode in range(n_episode):
 
         total_reward += reward.sum()
         rr += reward.cpu().numpy()
-        maddpg.memory.push(obs.data, action, next_obs, reward)
+        mean_action = th.mean(action, dim=0)
+        mean_maddpg.memory.push(obs.data, action, next_obs, reward, mean_action)
         obs = next_obs
 
-        c_loss, a_loss = maddpg.update_policy()
+        c_loss, a_loss = mean_maddpg.update_policy
 
         for k, v in info.items():
             if k in stat.keys():
                 stat[k] += v
             else:
                 stat[k] = v
-    maddpg.episode_done += 1
+    mean_maddpg.episode_done += 1
     print('Episode: %d, reward = %f' % (i_episode, total_reward))
     reward_record.append(total_reward)
 

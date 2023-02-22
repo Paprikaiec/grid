@@ -10,7 +10,7 @@ class Critic(nn.Module):
         self.dim_observation = dim_observation
         self.dim_action = dim_action
         obs_dim = dim_observation * n_agent
-        act_dim = self.dim_action * n_agent
+        act_dim = self.dim_action * 2
 
         self.FC1 = nn.Linear(obs_dim, 128)
         self.FC2 = nn.Linear(128+act_dim, 64)
