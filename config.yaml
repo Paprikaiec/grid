@@ -1,7 +1,8 @@
 environment: # max: 365*96
   learn_policy: "maddpg"
   max_cycles: 192 # 96*2
-  houses_per_node: 8 
+  houses_per_node: 8
+  wrap_number: 8
   climate_zone: 1
   hourly_timesteps: 4
 

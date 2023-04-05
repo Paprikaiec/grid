@@ -46,9 +46,10 @@ env = GridEnv(**grid_config_dict)
 np.random.seed(1234)
 th.manual_seed(1234)
 
-n_agents = env.n_agents
-n_states = env.get_obs_size() # maybe obs in maddpg
-n_actions = env.get_total_actions()
+wrap_number = env_config_dict['wrap_number']
+n_agents = int(env.n_agents / wrap_number)
+n_states = env.get_obs_size() * wrap_number # maybe obs in maddpg
+n_actions = env.get_total_actions() * wrap_number
 capacity = 750
 batch_size = 32
 
@@ -77,21 +78,26 @@ for i_episode in range(n_episode):
     for t in range(max_steps):
 
         obs = obs.type(FloatTensor)
-        action = maddpg.select_action(obs).data.cpu()
+        obs_wrap = th.reshape(obs, (n_agents, -1))
+        action_wrap = maddpg.select_action(obs_wrap).data.cpu()
+        action = th.reshape(action_wrap, (env.n_agents, -1))
         reward, done, info = env.step(action.numpy())
         obs_ = env.get_obs()
 
         reward = th.FloatTensor(reward).type(FloatTensor)
+        reward_wrap = th.reshape(reward, (n_agents, -1)).sum(axis=1).squeeze()
         obs_ = np.stack(obs_)
         obs_ = th.from_numpy(obs_).float()
         if t != max_steps - 1:
             next_obs = obs_
+            next_obs_wrap = np.reshape(next_obs, (n_agents, -1))
         else:
             next_obs = None
+            next_obs_wrap = None
 
-        total_reward += reward.sum()
-        rr += reward.cpu().numpy()
-        maddpg.memory.push(obs.data, action, next_obs, reward)
+        total_reward += reward_wrap.sum()
+        rr += reward_wrap.cpu().numpy()
+        maddpg.memory.push(obs_wrap.data, action_wrap, next_obs_wrap, reward_wrap)
         obs = next_obs
 
         c_loss, a_loss = maddpg.update_policy()

@@ -2,7 +2,8 @@ environment: # max: 365*96
   mode: "evaluate"
   learn_policy: "cmaqmixV2"
   max_cycles: 192 # 96*2
-  houses_per_node: 1
+  houses_per_node: 8
+  wrap_number: 8
   climate_zone: 2
   hourly_timesteps: 4
 

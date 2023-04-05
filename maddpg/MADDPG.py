@@ -149,7 +149,7 @@ class MADDPG:
             act = self.actors[i](sb.unsqueeze(0)).squeeze()
 
             act += th.from_numpy(
-                np.random.randn(4) * self.var[i]).type(FloatTensor)
+                np.random.randn(self.n_agents) * self.var[i]).type(FloatTensor)
 
             if self.episode_done > self.episodes_before_train and\
                self.var[i] > 0.05:
