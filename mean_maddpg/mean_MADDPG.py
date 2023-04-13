@@ -79,8 +79,10 @@ class mean_MADDPG:
                                                  batch.next_states)))
             # state_batch: batch_size x n_agents x dim_obs
             state_batch = th.stack(batch.states).type(FloatTensor)
+            # action_batch: batch_size x n_agents x action_dim
+            action_batch = th.stack(batch.actions).type(FloatTensor)
             # current_action_batch: batch_size x action_dim
-            current_action_batch = batch.actions[agent].clone().detach().type(FloatTensor)
+            current_action_batch = action_batch[:, agent, :]
             reward_batch = th.stack(batch.rewards).type(FloatTensor)
             mean_action_batch = th.stack(batch.mean_actions).type(FloatTensor) # todo: batch_size x act_dim
 
@@ -151,7 +153,7 @@ class mean_MADDPG:
             act = self.actors[i](sb.unsqueeze(0)).squeeze()
 
             act += th.from_numpy(
-                np.random.randn(4) * self.var[i]).type(FloatTensor)
+                np.random.randn(self.n_actions) * self.var[i]).type(FloatTensor)
 
             if self.episode_done > self.episodes_before_train and\
                self.var[i] > 0.05:

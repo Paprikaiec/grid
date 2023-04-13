@@ -13,6 +13,9 @@ from envs.smart_grid.smart_grid_env import GridEnv
 from mean_MADDPG import mean_MADDPG
 from params import scale_reward
 
+import os
+os.environ['CUDA_VISIBLE_DEVICES'] = "4"
+
 parser = argparse.ArgumentParser()
 parser.add_argument('alg', type=str, nargs="?", default="ippo")
 argv = parser.parse_args()
